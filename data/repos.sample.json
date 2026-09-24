@@ -1,0 +1,2911 @@
+{
+  "generatedAt": "2026-09-23T16:37:18.380Z",
+  "isSample": true,
+  "repos": [
+    {
+      "fullName": "sample-org/iris-ui-1",
+      "url": "https://github.com/sample-org/iris-ui-1",
+      "description": "Fictional TypeScript project used to demo the layout (sample data).",
+      "primaryLanguage": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "Ruby"
+      ],
+      "topics": [
+        "database",
+        "cli"
+      ],
+      "stars": 4378,
+      "pushedAt": "2026-09-14T04:36:02.105Z",
+      "contributingUrl": "https://github.com/sample-org/iris-ui-1/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": "Sample text: AI-assisted PRs must be disclosed and understood by the author.",
+      "goodFirstIssueCount": 10,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/iris-ui-1/issues/100",
+          "createdAt": "2026-09-06T17:28:04.604Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/iris-ui-1/issues/101",
+          "createdAt": "2026-09-06T17:45:44.213Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/iris-ui-1/issues/102",
+          "createdAt": "2026-08-26T08:12:32.738Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/iris-ui-1/issues/103",
+          "createdAt": "2026-09-18T04:32:13.958Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 121,
+        "sampledPRs": 100,
+        "externalPRs": 19,
+        "externalMergeRate": 0.78,
+        "newcomerPRs": 8,
+        "newcomerMergeRate": 0.73,
+        "medianFirstResponseHours": 11,
+        "medianMergeDays": 1,
+        "ghostedPct": 0,
+        "staleOpenPct": 0,
+        "confidence": "medium"
+      },
+      "welcomeScore": 89,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 78% of settled outside PRs (last 121 days).",
+        "One-time contributors get merged 73% of the time.",
+        "Maintainers usually reply within 11h.",
+        "10 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Mentions AI-assisted contributions. Read the policy before using an AI tool."
+      ]
+    },
+    {
+      "fullName": "sample-org/grove-kit-2",
+      "url": "https://github.com/sample-org/grove-kit-2",
+      "description": "Fictional Python project used to demo the layout (sample data).",
+      "primaryLanguage": "Python",
+      "languages": [
+        "Python",
+        "C#"
+      ],
+      "topics": [
+        "devtools",
+        "cli"
+      ],
+      "stars": 5910,
+      "pushedAt": "2026-09-19T05:15:03.251Z",
+      "contributingUrl": "https://github.com/sample-org/grove-kit-2/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 5,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/grove-kit-2/issues/100",
+          "createdAt": "2026-09-05T11:23:32.361Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/grove-kit-2/issues/101",
+          "createdAt": "2026-09-11T09:35:29.218Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/grove-kit-2/issues/102",
+          "createdAt": "2026-09-14T19:16:06.177Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/grove-kit-2/issues/103",
+          "createdAt": "2026-09-14T15:09:12.102Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 48,
+        "sampledPRs": 100,
+        "externalPRs": 40,
+        "externalMergeRate": 0.93,
+        "newcomerPRs": 16,
+        "newcomerMergeRate": 0.93,
+        "medianFirstResponseHours": 16,
+        "medianMergeDays": 4,
+        "ghostedPct": 0.01,
+        "staleOpenPct": 0.01,
+        "confidence": "high"
+      },
+      "welcomeScore": 92,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 93% of settled outside PRs (last 48 days).",
+        "One-time contributors get merged 93% of the time.",
+        "Maintainers usually reply within 16h.",
+        "5 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/beacon-sdk-3",
+      "url": "https://github.com/sample-org/beacon-sdk-3",
+      "description": "Fictional Go project used to demo the layout (sample data).",
+      "primaryLanguage": "Go",
+      "languages": [
+        "Go",
+        "Rust"
+      ],
+      "topics": [
+        "docs",
+        "api"
+      ],
+      "stars": 3734,
+      "pushedAt": "2026-09-18T14:24:20.637Z",
+      "contributingUrl": "https://github.com/sample-org/beacon-sdk-3/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 2,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/beacon-sdk-3/issues/100",
+          "createdAt": "2026-09-05T04:10:17.594Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/beacon-sdk-3/issues/101",
+          "createdAt": "2026-09-08T11:06:30.798Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 174,
+        "sampledPRs": 100,
+        "externalPRs": 63,
+        "externalMergeRate": 0.77,
+        "newcomerPRs": 25,
+        "newcomerMergeRate": 0.73,
+        "medianFirstResponseHours": 28,
+        "medianMergeDays": 3,
+        "ghostedPct": 0.02,
+        "staleOpenPct": 0.02,
+        "confidence": "high"
+      },
+      "welcomeScore": 83,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 77% of settled outside PRs (last 174 days).",
+        "One-time contributors get merged 73% of the time.",
+        "Maintainers usually reply within 28h.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/fjord-kit-4",
+      "url": "https://github.com/sample-org/fjord-kit-4",
+      "description": "Fictional Rust project used to demo the layout (sample data).",
+      "primaryLanguage": "Rust",
+      "languages": [
+        "Rust",
+        "Rust"
+      ],
+      "topics": [
+        "docs",
+        "devtools"
+      ],
+      "stars": 1557,
+      "pushedAt": "2026-09-22T22:04:52.282Z",
+      "contributingUrl": null,
+      "aiPolicySnippet": "Sample text: AI-assisted PRs must be disclosed and understood by the author.",
+      "goodFirstIssueCount": 2,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/fjord-kit-4/issues/100",
+          "createdAt": "2026-08-30T12:01:45.103Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/fjord-kit-4/issues/101",
+          "createdAt": "2026-09-11T11:33:05.936Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 137,
+        "sampledPRs": 100,
+        "externalPRs": 27,
+        "externalMergeRate": 0.72,
+        "newcomerPRs": 11,
+        "newcomerMergeRate": 0.54,
+        "medianFirstResponseHours": 29,
+        "medianMergeDays": 4,
+        "ghostedPct": 0.04,
+        "staleOpenPct": 0.03,
+        "confidence": "medium"
+      },
+      "welcomeScore": 75,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 72% of settled outside PRs (last 137 days).",
+        "One-time contributors get merged 54% of the time.",
+        "Maintainers usually reply within 29h."
+      ],
+      "watchouts": [
+        "Mentions AI-assisted contributions. Read the policy before using an AI tool."
+      ]
+    },
+    {
+      "fullName": "sample-org/grove-api-5",
+      "url": "https://github.com/sample-org/grove-api-5",
+      "description": "Fictional JavaScript project used to demo the layout (sample data).",
+      "primaryLanguage": "JavaScript",
+      "languages": [
+        "JavaScript"
+      ],
+      "topics": [
+        "react",
+        "database"
+      ],
+      "stars": 21082,
+      "pushedAt": "2026-09-18T03:57:07.508Z",
+      "contributingUrl": null,
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 5,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/grove-api-5/issues/100",
+          "createdAt": "2026-09-11T16:15:30.831Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/grove-api-5/issues/101",
+          "createdAt": "2026-08-26T13:10:13.937Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/grove-api-5/issues/102",
+          "createdAt": "2026-08-26T23:43:32.511Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/grove-api-5/issues/103",
+          "createdAt": "2026-09-06T02:57:23.750Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 158,
+        "sampledPRs": 100,
+        "externalPRs": 41,
+        "externalMergeRate": 0.73,
+        "newcomerPRs": 16,
+        "newcomerMergeRate": 0.55,
+        "medianFirstResponseHours": 10,
+        "medianMergeDays": 3,
+        "ghostedPct": 0.04,
+        "staleOpenPct": 0.03,
+        "confidence": "high"
+      },
+      "welcomeScore": 80,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 73% of settled outside PRs (last 158 days).",
+        "One-time contributors get merged 55% of the time.",
+        "Maintainers usually reply within 10h.",
+        "5 open \"good first issue\" tickets right now."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/fjord-kit-6",
+      "url": "https://github.com/sample-org/fjord-kit-6",
+      "description": "Fictional Java project used to demo the layout (sample data).",
+      "primaryLanguage": "Java",
+      "languages": [
+        "Java"
+      ],
+      "topics": [
+        "api",
+        "devtools"
+      ],
+      "stars": 23037,
+      "pushedAt": "2026-09-13T23:15:43.590Z",
+      "contributingUrl": "https://github.com/sample-org/fjord-kit-6/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 10,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/fjord-kit-6/issues/100",
+          "createdAt": "2026-09-13T21:34:14.008Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/fjord-kit-6/issues/101",
+          "createdAt": "2026-09-03T07:43:37.199Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/fjord-kit-6/issues/102",
+          "createdAt": "2026-09-15T07:17:31.363Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/fjord-kit-6/issues/103",
+          "createdAt": "2026-09-08T00:23:42.412Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 76,
+        "sampledPRs": 100,
+        "externalPRs": 15,
+        "externalMergeRate": 0.89,
+        "newcomerPRs": 6,
+        "newcomerMergeRate": 0.78,
+        "medianFirstResponseHours": 23,
+        "medianMergeDays": 6,
+        "ghostedPct": 0.08,
+        "staleOpenPct": 0.07,
+        "confidence": "medium"
+      },
+      "welcomeScore": 90,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 89% of settled outside PRs (last 76 days).",
+        "One-time contributors get merged 78% of the time.",
+        "Maintainers usually reply within 23h.",
+        "10 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/atlas-ui-7",
+      "url": "https://github.com/sample-org/atlas-ui-7",
+      "description": "Fictional Ruby project used to demo the layout (sample data).",
+      "primaryLanguage": "Ruby",
+      "languages": [
+        "Ruby",
+        "Python"
+      ],
+      "topics": [
+        "docs",
+        "cli"
+      ],
+      "stars": 28227,
+      "pushedAt": "2026-09-19T05:05:05.688Z",
+      "contributingUrl": "https://github.com/sample-org/atlas-ui-7/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 7,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/atlas-ui-7/issues/100",
+          "createdAt": "2026-09-06T03:19:25.239Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/atlas-ui-7/issues/101",
+          "createdAt": "2026-09-10T20:59:43.170Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/atlas-ui-7/issues/102",
+          "createdAt": "2026-09-20T16:12:46.082Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/atlas-ui-7/issues/103",
+          "createdAt": "2026-09-19T13:30:13.729Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 142,
+        "sampledPRs": 100,
+        "externalPRs": 61,
+        "externalMergeRate": 0.63,
+        "newcomerPRs": 24,
+        "newcomerMergeRate": 0.45,
+        "medianFirstResponseHours": 35,
+        "medianMergeDays": 4,
+        "ghostedPct": 0.1,
+        "staleOpenPct": 0.11,
+        "confidence": "high"
+      },
+      "welcomeScore": 82,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 63% of settled outside PRs (last 142 days).",
+        "Maintainers usually reply within 35h.",
+        "7 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/juno-sdk-8",
+      "url": "https://github.com/sample-org/juno-sdk-8",
+      "description": "Fictional C# project used to demo the layout (sample data).",
+      "primaryLanguage": "C#",
+      "languages": [
+        "C#"
+      ],
+      "topics": [
+        "testing",
+        "docs"
+      ],
+      "stars": 17769,
+      "pushedAt": "2026-09-20T22:01:24.488Z",
+      "contributingUrl": "https://github.com/sample-org/juno-sdk-8/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 8,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/juno-sdk-8/issues/100",
+          "createdAt": "2026-09-19T16:45:17.262Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/juno-sdk-8/issues/101",
+          "createdAt": "2026-09-09T21:27:20.838Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/juno-sdk-8/issues/102",
+          "createdAt": "2026-09-04T00:19:42.862Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/juno-sdk-8/issues/103",
+          "createdAt": "2026-09-14T05:37:43.968Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 118,
+        "sampledPRs": 100,
+        "externalPRs": 30,
+        "externalMergeRate": 0.68,
+        "newcomerPRs": 12,
+        "newcomerMergeRate": 0.59,
+        "medianFirstResponseHours": 48,
+        "medianMergeDays": 5,
+        "ghostedPct": 0.08,
+        "staleOpenPct": 0.06,
+        "confidence": "high"
+      },
+      "welcomeScore": 84,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 68% of settled outside PRs (last 118 days).",
+        "One-time contributors get merged 59% of the time.",
+        "Maintainers usually reply within 2 days.",
+        "8 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/harbor-sdk-9",
+      "url": "https://github.com/sample-org/harbor-sdk-9",
+      "description": "Fictional TypeScript project used to demo the layout (sample data).",
+      "primaryLanguage": "TypeScript",
+      "languages": [
+        "TypeScript"
+      ],
+      "topics": [
+        "database",
+        "database"
+      ],
+      "stars": 20989,
+      "pushedAt": "2026-09-23T14:35:01.778Z",
+      "contributingUrl": "https://github.com/sample-org/harbor-sdk-9/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 10,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/harbor-sdk-9/issues/100",
+          "createdAt": "2026-08-29T16:16:58.996Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/harbor-sdk-9/issues/101",
+          "createdAt": "2026-09-11T11:34:32.204Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/harbor-sdk-9/issues/102",
+          "createdAt": "2026-09-03T05:52:24.022Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/harbor-sdk-9/issues/103",
+          "createdAt": "2026-09-19T06:02:05.796Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 90,
+        "sampledPRs": 100,
+        "externalPRs": 38,
+        "externalMergeRate": 0.78,
+        "newcomerPRs": 15,
+        "newcomerMergeRate": 0.63,
+        "medianFirstResponseHours": 29,
+        "medianMergeDays": 6,
+        "ghostedPct": 0.1,
+        "staleOpenPct": 0.06,
+        "confidence": "high"
+      },
+      "welcomeScore": 90,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 78% of settled outside PRs (last 90 days).",
+        "One-time contributors get merged 63% of the time.",
+        "Maintainers usually reply within 29h.",
+        "10 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/harbor-sdk-10",
+      "url": "https://github.com/sample-org/harbor-sdk-10",
+      "description": "Fictional Python project used to demo the layout (sample data).",
+      "primaryLanguage": "Python",
+      "languages": [
+        "Python",
+        "Ruby"
+      ],
+      "topics": [
+        "cli",
+        "testing"
+      ],
+      "stars": 27929,
+      "pushedAt": "2026-09-17T11:24:55.728Z",
+      "contributingUrl": "https://github.com/sample-org/harbor-sdk-10/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 1,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/harbor-sdk-10/issues/100",
+          "createdAt": "2026-08-31T14:19:15.618Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 170,
+        "sampledPRs": 100,
+        "externalPRs": 46,
+        "externalMergeRate": 0.71,
+        "newcomerPRs": 18,
+        "newcomerMergeRate": 0.68,
+        "medianFirstResponseHours": 11,
+        "medianMergeDays": 7,
+        "ghostedPct": 0.14,
+        "staleOpenPct": 0.13,
+        "confidence": "high"
+      },
+      "welcomeScore": 79,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 71% of settled outside PRs (last 170 days).",
+        "One-time contributors get merged 68% of the time.",
+        "Maintainers usually reply within 11h.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/harbor-kit-11",
+      "url": "https://github.com/sample-org/harbor-kit-11",
+      "description": "Fictional Go project used to demo the layout (sample data).",
+      "primaryLanguage": "Go",
+      "languages": [
+        "Go"
+      ],
+      "topics": [
+        "react",
+        "cli"
+      ],
+      "stars": 24495,
+      "pushedAt": "2026-09-13T21:21:14.589Z",
+      "contributingUrl": null,
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 5,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/harbor-kit-11/issues/100",
+          "createdAt": "2026-09-19T02:41:22.530Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/harbor-kit-11/issues/101",
+          "createdAt": "2026-08-29T07:16:00.289Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/harbor-kit-11/issues/102",
+          "createdAt": "2026-09-09T16:24:18.667Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/harbor-kit-11/issues/103",
+          "createdAt": "2026-09-12T02:54:36.243Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 150,
+        "sampledPRs": 100,
+        "externalPRs": 39,
+        "externalMergeRate": 0.76,
+        "newcomerPRs": 16,
+        "newcomerMergeRate": 0.71,
+        "medianFirstResponseHours": 32,
+        "medianMergeDays": 5,
+        "ghostedPct": 0.07,
+        "staleOpenPct": 0.06,
+        "confidence": "high"
+      },
+      "welcomeScore": 80,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 76% of settled outside PRs (last 150 days).",
+        "One-time contributors get merged 71% of the time.",
+        "Maintainers usually reply within 32h.",
+        "5 open \"good first issue\" tickets right now."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/juno-sdk-12",
+      "url": "https://github.com/sample-org/juno-sdk-12",
+      "description": "Fictional Rust project used to demo the layout (sample data).",
+      "primaryLanguage": "Rust",
+      "languages": [
+        "Rust"
+      ],
+      "topics": [
+        "cli",
+        "docs"
+      ],
+      "stars": 13216,
+      "pushedAt": "2026-09-14T18:07:49.734Z",
+      "contributingUrl": "https://github.com/sample-org/juno-sdk-12/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 4,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/juno-sdk-12/issues/100",
+          "createdAt": "2026-09-20T00:56:57.428Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/juno-sdk-12/issues/101",
+          "createdAt": "2026-09-14T15:47:11.230Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/juno-sdk-12/issues/102",
+          "createdAt": "2026-08-28T18:09:09.084Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/juno-sdk-12/issues/103",
+          "createdAt": "2026-09-20T22:10:38.081Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 72,
+        "sampledPRs": 100,
+        "externalPRs": 31,
+        "externalMergeRate": 0.73,
+        "newcomerPRs": 12,
+        "newcomerMergeRate": 0.54,
+        "medianFirstResponseHours": 50,
+        "medianMergeDays": 1,
+        "ghostedPct": 0.16,
+        "staleOpenPct": 0.07,
+        "confidence": "high"
+      },
+      "welcomeScore": 80,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 73% of settled outside PRs (last 72 days).",
+        "One-time contributors get merged 54% of the time.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/harbor-cli-13",
+      "url": "https://github.com/sample-org/harbor-cli-13",
+      "description": "Fictional JavaScript project used to demo the layout (sample data).",
+      "primaryLanguage": "JavaScript",
+      "languages": [
+        "JavaScript"
+      ],
+      "topics": [
+        "database",
+        "testing"
+      ],
+      "stars": 29806,
+      "pushedAt": "2026-09-21T08:21:01.501Z",
+      "contributingUrl": "https://github.com/sample-org/harbor-cli-13/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 5,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/harbor-cli-13/issues/100",
+          "createdAt": "2026-09-05T18:03:32.071Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/harbor-cli-13/issues/101",
+          "createdAt": "2026-08-26T18:01:08.253Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/harbor-cli-13/issues/102",
+          "createdAt": "2026-09-03T11:39:37.231Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/harbor-cli-13/issues/103",
+          "createdAt": "2026-08-24T17:06:01.772Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 73,
+        "sampledPRs": 100,
+        "externalPRs": 24,
+        "externalMergeRate": 0.74,
+        "newcomerPRs": 10,
+        "newcomerMergeRate": 0.59,
+        "medianFirstResponseHours": 14,
+        "medianMergeDays": 4,
+        "ghostedPct": 0.19,
+        "staleOpenPct": 0.18,
+        "confidence": "medium"
+      },
+      "welcomeScore": 81,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 74% of settled outside PRs (last 73 days).",
+        "One-time contributors get merged 59% of the time.",
+        "Maintainers usually reply within 14h.",
+        "5 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/ember-kit-14",
+      "url": "https://github.com/sample-org/ember-kit-14",
+      "description": "Fictional Java project used to demo the layout (sample data).",
+      "primaryLanguage": "Java",
+      "languages": [
+        "Java"
+      ],
+      "topics": [
+        "web",
+        "api"
+      ],
+      "stars": 15441,
+      "pushedAt": "2026-09-20T23:11:58.999Z",
+      "contributingUrl": "https://github.com/sample-org/ember-kit-14/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 8,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/ember-kit-14/issues/100",
+          "createdAt": "2026-09-21T15:04:30.121Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/ember-kit-14/issues/101",
+          "createdAt": "2026-09-12T09:18:39.663Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/ember-kit-14/issues/102",
+          "createdAt": "2026-09-09T20:35:41.359Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/ember-kit-14/issues/103",
+          "createdAt": "2026-09-11T07:31:50.634Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 148,
+        "sampledPRs": 100,
+        "externalPRs": 26,
+        "externalMergeRate": 0.61,
+        "newcomerPRs": 10,
+        "newcomerMergeRate": 0.5,
+        "medianFirstResponseHours": 9,
+        "medianMergeDays": 2,
+        "ghostedPct": 0.16,
+        "staleOpenPct": 0.21,
+        "confidence": "medium"
+      },
+      "welcomeScore": 81,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 61% of settled outside PRs (last 148 days).",
+        "One-time contributors get merged 50% of the time.",
+        "Maintainers usually reply within 9h.",
+        "8 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/ember-kit-15",
+      "url": "https://github.com/sample-org/ember-kit-15",
+      "description": "Fictional Ruby project used to demo the layout (sample data).",
+      "primaryLanguage": "Ruby",
+      "languages": [
+        "Ruby",
+        "JavaScript"
+      ],
+      "topics": [
+        "ml",
+        "react"
+      ],
+      "stars": 11861,
+      "pushedAt": "2026-09-14T18:03:36.146Z",
+      "contributingUrl": "https://github.com/sample-org/ember-kit-15/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 3,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-kit-15/issues/100",
+          "createdAt": "2026-09-06T20:09:44.529Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-kit-15/issues/101",
+          "createdAt": "2026-08-25T09:05:19.713Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-kit-15/issues/102",
+          "createdAt": "2026-09-19T01:16:24.697Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 77,
+        "sampledPRs": 100,
+        "externalPRs": 63,
+        "externalMergeRate": 0.64,
+        "newcomerPRs": 25,
+        "newcomerMergeRate": 0.52,
+        "medianFirstResponseHours": 14,
+        "medianMergeDays": 6,
+        "ghostedPct": 0.09,
+        "staleOpenPct": 0.15,
+        "confidence": "high"
+      },
+      "welcomeScore": 79,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 64% of settled outside PRs (last 77 days).",
+        "One-time contributors get merged 52% of the time.",
+        "Maintainers usually reply within 14h.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/iris-kit-16",
+      "url": "https://github.com/sample-org/iris-kit-16",
+      "description": "Fictional C# project used to demo the layout (sample data).",
+      "primaryLanguage": "C#",
+      "languages": [
+        "C#"
+      ],
+      "topics": [
+        "testing",
+        "web"
+      ],
+      "stars": 4659,
+      "pushedAt": "2026-09-23T04:33:57.365Z",
+      "contributingUrl": "https://github.com/sample-org/iris-kit-16/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 4,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/iris-kit-16/issues/100",
+          "createdAt": "2026-08-30T12:17:40.500Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/iris-kit-16/issues/101",
+          "createdAt": "2026-09-03T22:30:13.938Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/iris-kit-16/issues/102",
+          "createdAt": "2026-09-19T04:41:38.995Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/iris-kit-16/issues/103",
+          "createdAt": "2026-09-06T13:32:57.665Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 179,
+        "sampledPRs": 100,
+        "externalPRs": 59,
+        "externalMergeRate": 0.66,
+        "newcomerPRs": 24,
+        "newcomerMergeRate": 0.55,
+        "medianFirstResponseHours": 53,
+        "medianMergeDays": 3,
+        "ghostedPct": 0.21,
+        "staleOpenPct": 0.14,
+        "confidence": "high"
+      },
+      "welcomeScore": 77,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 66% of settled outside PRs (last 179 days).",
+        "One-time contributors get merged 55% of the time.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/delta-api-17",
+      "url": "https://github.com/sample-org/delta-api-17",
+      "description": "Fictional TypeScript project used to demo the layout (sample data).",
+      "primaryLanguage": "TypeScript",
+      "languages": [
+        "TypeScript",
+        "Ruby"
+      ],
+      "topics": [
+        "react",
+        "testing"
+      ],
+      "stars": 11246,
+      "pushedAt": "2026-09-23T00:02:22.656Z",
+      "contributingUrl": "https://github.com/sample-org/delta-api-17/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 11,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/delta-api-17/issues/100",
+          "createdAt": "2026-09-07T12:17:29.527Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/delta-api-17/issues/101",
+          "createdAt": "2026-08-27T11:35:11.021Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/delta-api-17/issues/102",
+          "createdAt": "2026-08-28T18:25:05.799Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/delta-api-17/issues/103",
+          "createdAt": "2026-09-10T11:23:38.752Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 87,
+        "sampledPRs": 100,
+        "externalPRs": 62,
+        "externalMergeRate": 0.65,
+        "newcomerPRs": 25,
+        "newcomerMergeRate": 0.57,
+        "medianFirstResponseHours": 82,
+        "medianMergeDays": 4,
+        "ghostedPct": 0.22,
+        "staleOpenPct": 0.11,
+        "confidence": "high"
+      },
+      "welcomeScore": 80,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 65% of settled outside PRs (last 87 days).",
+        "One-time contributors get merged 57% of the time.",
+        "11 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/beacon-sdk-18",
+      "url": "https://github.com/sample-org/beacon-sdk-18",
+      "description": "Fictional Python project used to demo the layout (sample data).",
+      "primaryLanguage": "Python",
+      "languages": [
+        "Python",
+        "Java"
+      ],
+      "topics": [
+        "devtools",
+        "react"
+      ],
+      "stars": 1830,
+      "pushedAt": "2026-09-20T09:32:59.674Z",
+      "contributingUrl": "https://github.com/sample-org/beacon-sdk-18/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": "Sample text: AI-assisted PRs must be disclosed and understood by the author.",
+      "goodFirstIssueCount": 1,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/beacon-sdk-18/issues/100",
+          "createdAt": "2026-09-17T19:37:52.332Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 166,
+        "sampledPRs": 100,
+        "externalPRs": 25,
+        "externalMergeRate": 0.59,
+        "newcomerPRs": 10,
+        "newcomerMergeRate": 0.53,
+        "medianFirstResponseHours": 86,
+        "medianMergeDays": 5,
+        "ghostedPct": 0.19,
+        "staleOpenPct": 0.09,
+        "confidence": "medium"
+      },
+      "welcomeScore": 67,
+      "verdict": "selective",
+      "strengths": [
+        "One-time contributors get merged 53% of the time.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Mentions AI-assisted contributions. Read the policy before using an AI tool."
+      ]
+    },
+    {
+      "fullName": "sample-org/harbor-api-19",
+      "url": "https://github.com/sample-org/harbor-api-19",
+      "description": "Fictional Go project used to demo the layout (sample data).",
+      "primaryLanguage": "Go",
+      "languages": [
+        "Go"
+      ],
+      "topics": [
+        "web",
+        "database"
+      ],
+      "stars": 19085,
+      "pushedAt": "2026-09-16T19:31:26.300Z",
+      "contributingUrl": "https://github.com/sample-org/harbor-api-19/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 9,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/harbor-api-19/issues/100",
+          "createdAt": "2026-09-04T22:52:40.739Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/harbor-api-19/issues/101",
+          "createdAt": "2026-08-27T11:40:15.805Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/harbor-api-19/issues/102",
+          "createdAt": "2026-09-13T15:15:27.916Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/harbor-api-19/issues/103",
+          "createdAt": "2026-09-08T18:30:27.509Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 120,
+        "sampledPRs": 100,
+        "externalPRs": 45,
+        "externalMergeRate": 0.49,
+        "newcomerPRs": 18,
+        "newcomerMergeRate": 0.42,
+        "medianFirstResponseHours": 8,
+        "medianMergeDays": 11,
+        "ghostedPct": 0.08,
+        "staleOpenPct": 0.32,
+        "confidence": "high"
+      },
+      "welcomeScore": 80,
+      "verdict": "welcoming",
+      "strengths": [
+        "Maintainers usually reply within 8h.",
+        "9 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/ember-kit-20",
+      "url": "https://github.com/sample-org/ember-kit-20",
+      "description": "Fictional Rust project used to demo the layout (sample data).",
+      "primaryLanguage": "Rust",
+      "languages": [
+        "Rust"
+      ],
+      "topics": [
+        "api",
+        "web"
+      ],
+      "stars": 25790,
+      "pushedAt": "2026-09-18T17:16:25.281Z",
+      "contributingUrl": "https://github.com/sample-org/ember-kit-20/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 9,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-kit-20/issues/100",
+          "createdAt": "2026-09-12T13:17:17.904Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/ember-kit-20/issues/101",
+          "createdAt": "2026-08-25T19:49:43.167Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-kit-20/issues/102",
+          "createdAt": "2026-09-07T19:14:56.363Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-kit-20/issues/103",
+          "createdAt": "2026-09-04T13:41:25.195Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 127,
+        "sampledPRs": 100,
+        "externalPRs": 63,
+        "externalMergeRate": 0.63,
+        "newcomerPRs": 25,
+        "newcomerMergeRate": 0.51,
+        "medianFirstResponseHours": 33,
+        "medianMergeDays": 10,
+        "ghostedPct": 0.26,
+        "staleOpenPct": 0.28,
+        "confidence": "high"
+      },
+      "welcomeScore": 81,
+      "verdict": "welcoming",
+      "strengths": [
+        "Merges 63% of settled outside PRs (last 127 days).",
+        "One-time contributors get merged 51% of the time.",
+        "Maintainers usually reply within 33h.",
+        "9 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/ember-kit-21",
+      "url": "https://github.com/sample-org/ember-kit-21",
+      "description": "Fictional JavaScript project used to demo the layout (sample data).",
+      "primaryLanguage": "JavaScript",
+      "languages": [
+        "JavaScript"
+      ],
+      "topics": [
+        "docs",
+        "database"
+      ],
+      "stars": 7406,
+      "pushedAt": "2026-09-17T20:44:33.997Z",
+      "contributingUrl": "https://github.com/sample-org/ember-kit-21/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": "Sample text: AI-assisted PRs must be disclosed and understood by the author.",
+      "goodFirstIssueCount": 11,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/ember-kit-21/issues/100",
+          "createdAt": "2026-09-03T23:24:33.796Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/ember-kit-21/issues/101",
+          "createdAt": "2026-09-01T13:50:59.477Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/ember-kit-21/issues/102",
+          "createdAt": "2026-09-02T13:58:17.202Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/ember-kit-21/issues/103",
+          "createdAt": "2026-09-15T12:52:40.401Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 60,
+        "sampledPRs": 100,
+        "externalPRs": 42,
+        "externalMergeRate": 0.52,
+        "newcomerPRs": 17,
+        "newcomerMergeRate": 0.48,
+        "medianFirstResponseHours": 62,
+        "medianMergeDays": 13,
+        "ghostedPct": 0.11,
+        "staleOpenPct": 0.27,
+        "confidence": "high"
+      },
+      "welcomeScore": 79,
+      "verdict": "welcoming",
+      "strengths": [
+        "11 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Mentions AI-assisted contributions. Read the policy before using an AI tool."
+      ]
+    },
+    {
+      "fullName": "sample-org/beacon-api-22",
+      "url": "https://github.com/sample-org/beacon-api-22",
+      "description": "Fictional Java project used to demo the layout (sample data).",
+      "primaryLanguage": "Java",
+      "languages": [
+        "Java",
+        "C#"
+      ],
+      "topics": [
+        "security",
+        "api"
+      ],
+      "stars": 26121,
+      "pushedAt": "2026-09-18T04:40:49.309Z",
+      "contributingUrl": "https://github.com/sample-org/beacon-api-22/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 2,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/beacon-api-22/issues/100",
+          "createdAt": "2026-08-25T13:36:28.822Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/beacon-api-22/issues/101",
+          "createdAt": "2026-09-07T00:02:42.989Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 167,
+        "sampledPRs": 100,
+        "externalPRs": 27,
+        "externalMergeRate": 0.59,
+        "newcomerPRs": 11,
+        "newcomerMergeRate": 0.54,
+        "medianFirstResponseHours": 16,
+        "medianMergeDays": 10,
+        "ghostedPct": 0.2,
+        "staleOpenPct": 0.21,
+        "confidence": "medium"
+      },
+      "welcomeScore": 74,
+      "verdict": "welcoming",
+      "strengths": [
+        "One-time contributors get merged 54% of the time.",
+        "Maintainers usually reply within 16h.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/ember-sdk-23",
+      "url": "https://github.com/sample-org/ember-sdk-23",
+      "description": "Fictional Ruby project used to demo the layout (sample data).",
+      "primaryLanguage": "Ruby",
+      "languages": [
+        "Ruby"
+      ],
+      "topics": [
+        "database",
+        "database"
+      ],
+      "stars": 6959,
+      "pushedAt": "2026-09-14T10:45:57.457Z",
+      "contributingUrl": "https://github.com/sample-org/ember-sdk-23/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": "Sample text: AI-assisted PRs must be disclosed and understood by the author.",
+      "goodFirstIssueCount": 8,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-sdk-23/issues/100",
+          "createdAt": "2026-08-28T13:45:01.259Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/ember-sdk-23/issues/101",
+          "createdAt": "2026-09-01T07:08:59.582Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/ember-sdk-23/issues/102",
+          "createdAt": "2026-09-08T11:33:45.318Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-sdk-23/issues/103",
+          "createdAt": "2026-08-30T23:33:22.913Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 76,
+        "sampledPRs": 100,
+        "externalPRs": 39,
+        "externalMergeRate": 0.44,
+        "newcomerPRs": 16,
+        "newcomerMergeRate": 0.27,
+        "medianFirstResponseHours": 10,
+        "medianMergeDays": 11,
+        "ghostedPct": 0.29,
+        "staleOpenPct": 0.11,
+        "confidence": "high"
+      },
+      "welcomeScore": 74,
+      "verdict": "welcoming",
+      "strengths": [
+        "Maintainers usually reply within 10h.",
+        "8 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Mentions AI-assisted contributions. Read the policy before using an AI tool."
+      ]
+    },
+    {
+      "fullName": "sample-org/delta-cli-24",
+      "url": "https://github.com/sample-org/delta-cli-24",
+      "description": "Fictional C# project used to demo the layout (sample data).",
+      "primaryLanguage": "C#",
+      "languages": [
+        "C#"
+      ],
+      "topics": [
+        "database",
+        "database"
+      ],
+      "stars": 22191,
+      "pushedAt": "2026-09-18T19:26:18.977Z",
+      "contributingUrl": null,
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 10,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/delta-cli-24/issues/100",
+          "createdAt": "2026-09-11T07:14:10.614Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/delta-cli-24/issues/101",
+          "createdAt": "2026-09-12T22:23:11.328Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/delta-cli-24/issues/102",
+          "createdAt": "2026-09-09T18:47:05.673Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/delta-cli-24/issues/103",
+          "createdAt": "2026-09-05T10:01:11.054Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 179,
+        "sampledPRs": 100,
+        "externalPRs": 23,
+        "externalMergeRate": 0.45,
+        "newcomerPRs": 9,
+        "newcomerMergeRate": 0.42,
+        "medianFirstResponseHours": 31,
+        "medianMergeDays": 9,
+        "ghostedPct": 0.24,
+        "staleOpenPct": 0.26,
+        "confidence": "medium"
+      },
+      "welcomeScore": 69,
+      "verdict": "selective",
+      "strengths": [
+        "Maintainers usually reply within 31h.",
+        "10 open \"good first issue\" tickets right now."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/beacon-api-25",
+      "url": "https://github.com/sample-org/beacon-api-25",
+      "description": "Fictional TypeScript project used to demo the layout (sample data).",
+      "primaryLanguage": "TypeScript",
+      "languages": [
+        "TypeScript"
+      ],
+      "topics": [
+        "devtools",
+        "api"
+      ],
+      "stars": 5850,
+      "pushedAt": "2026-09-14T20:16:55.530Z",
+      "contributingUrl": "https://github.com/sample-org/beacon-api-25/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 3,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/beacon-api-25/issues/100",
+          "createdAt": "2026-09-02T05:10:42.360Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/beacon-api-25/issues/101",
+          "createdAt": "2026-09-05T07:09:37.269Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/beacon-api-25/issues/102",
+          "createdAt": "2026-09-09T15:10:07.136Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 170,
+        "sampledPRs": 100,
+        "externalPRs": 64,
+        "externalMergeRate": 0.47,
+        "newcomerPRs": 26,
+        "newcomerMergeRate": 0.34,
+        "medianFirstResponseHours": 60,
+        "medianMergeDays": 1,
+        "ghostedPct": 0.14,
+        "staleOpenPct": 0.34,
+        "confidence": "high"
+      },
+      "welcomeScore": 69,
+      "verdict": "selective",
+      "strengths": [
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/beacon-api-26",
+      "url": "https://github.com/sample-org/beacon-api-26",
+      "description": "Fictional Python project used to demo the layout (sample data).",
+      "primaryLanguage": "Python",
+      "languages": [
+        "Python",
+        "Go"
+      ],
+      "topics": [
+        "devtools",
+        "security"
+      ],
+      "stars": 7755,
+      "pushedAt": "2026-09-17T09:24:11.608Z",
+      "contributingUrl": "https://github.com/sample-org/beacon-api-26/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 5,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/beacon-api-26/issues/100",
+          "createdAt": "2026-09-16T10:46:31.590Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/beacon-api-26/issues/101",
+          "createdAt": "2026-08-27T06:34:17.534Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/beacon-api-26/issues/102",
+          "createdAt": "2026-08-25T19:04:37.643Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/beacon-api-26/issues/103",
+          "createdAt": "2026-09-14T12:52:53.484Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 176,
+        "sampledPRs": 100,
+        "externalPRs": 53,
+        "externalMergeRate": 0.52,
+        "newcomerPRs": 21,
+        "newcomerMergeRate": 0.39,
+        "medianFirstResponseHours": 40,
+        "medianMergeDays": 9,
+        "ghostedPct": 0.19,
+        "staleOpenPct": 0.28,
+        "confidence": "high"
+      },
+      "welcomeScore": 74,
+      "verdict": "welcoming",
+      "strengths": [
+        "Maintainers usually reply within 40h.",
+        "5 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/atlas-sdk-27",
+      "url": "https://github.com/sample-org/atlas-sdk-27",
+      "description": "Fictional Go project used to demo the layout (sample data).",
+      "primaryLanguage": "Go",
+      "languages": [
+        "Go"
+      ],
+      "topics": [
+        "database",
+        "devtools"
+      ],
+      "stars": 21635,
+      "pushedAt": "2026-09-19T18:56:30.248Z",
+      "contributingUrl": "https://github.com/sample-org/atlas-sdk-27/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 2,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/atlas-sdk-27/issues/100",
+          "createdAt": "2026-09-20T12:27:40.228Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/atlas-sdk-27/issues/101",
+          "createdAt": "2026-08-25T13:00:42.100Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 82,
+        "sampledPRs": 100,
+        "externalPRs": 23,
+        "externalMergeRate": 0.46,
+        "newcomerPRs": 9,
+        "newcomerMergeRate": 0.31,
+        "medianFirstResponseHours": 111,
+        "medianMergeDays": 11,
+        "ghostedPct": 0.26,
+        "staleOpenPct": 0.44,
+        "confidence": "medium"
+      },
+      "welcomeScore": 60,
+      "verdict": "selective",
+      "strengths": [
+        "Has a written contributing guide."
+      ],
+      "watchouts": []
+    },
+    {
+      "fullName": "sample-org/juno-kit-28",
+      "url": "https://github.com/sample-org/juno-kit-28",
+      "description": "Fictional Rust project used to demo the layout (sample data).",
+      "primaryLanguage": "Rust",
+      "languages": [
+        "Rust"
+      ],
+      "topics": [
+        "devtools",
+        "react"
+      ],
+      "stars": 10233,
+      "pushedAt": "2026-09-14T03:04:18.249Z",
+      "contributingUrl": "https://github.com/sample-org/juno-kit-28/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 2,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/juno-kit-28/issues/100",
+          "createdAt": "2026-08-27T17:25:17.784Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/juno-kit-28/issues/101",
+          "createdAt": "2026-09-01T10:34:45.250Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 118,
+        "sampledPRs": 100,
+        "externalPRs": 69,
+        "externalMergeRate": 0.44,
+        "newcomerPRs": 28,
+        "newcomerMergeRate": 0.41,
+        "medianFirstResponseHours": 97,
+        "medianMergeDays": 2,
+        "ghostedPct": 0.39,
+        "staleOpenPct": 0.37,
+        "confidence": "high"
+      },
+      "welcomeScore": 61,
+      "verdict": "selective",
+      "strengths": [
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "39% of outside PRs never get a maintainer reply."
+      ]
+    },
+    {
+      "fullName": "sample-org/ember-kit-29",
+      "url": "https://github.com/sample-org/ember-kit-29",
+      "description": "Fictional JavaScript project used to demo the layout (sample data).",
+      "primaryLanguage": "JavaScript",
+      "languages": [
+        "JavaScript"
+      ],
+      "topics": [
+        "docs",
+        "react"
+      ],
+      "stars": 13506,
+      "pushedAt": "2026-09-22T06:06:53.763Z",
+      "contributingUrl": "https://github.com/sample-org/ember-kit-29/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 7,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/ember-kit-29/issues/100",
+          "createdAt": "2026-09-18T09:51:56.819Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-kit-29/issues/101",
+          "createdAt": "2026-08-31T11:16:56.516Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/ember-kit-29/issues/102",
+          "createdAt": "2026-09-02T10:26:02.648Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/ember-kit-29/issues/103",
+          "createdAt": "2026-09-03T08:59:44.585Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 80,
+        "sampledPRs": 100,
+        "externalPRs": 61,
+        "externalMergeRate": 0.34,
+        "newcomerPRs": 24,
+        "newcomerMergeRate": 0.22,
+        "medianFirstResponseHours": 8,
+        "medianMergeDays": 12,
+        "ghostedPct": 0.11,
+        "staleOpenPct": 0.41,
+        "confidence": "high"
+      },
+      "welcomeScore": 72,
+      "verdict": "welcoming",
+      "strengths": [
+        "Maintainers usually reply within 8h.",
+        "7 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 34% of settled outside PRs get merged."
+      ]
+    },
+    {
+      "fullName": "sample-org/ember-cli-30",
+      "url": "https://github.com/sample-org/ember-cli-30",
+      "description": "Fictional Java project used to demo the layout (sample data).",
+      "primaryLanguage": "Java",
+      "languages": [
+        "Java",
+        "C#"
+      ],
+      "topics": [
+        "security",
+        "api"
+      ],
+      "stars": 23808,
+      "pushedAt": "2026-09-19T21:14:39.116Z",
+      "contributingUrl": "https://github.com/sample-org/ember-cli-30/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 11,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/ember-cli-30/issues/100",
+          "createdAt": "2026-09-11T15:26:23.925Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/ember-cli-30/issues/101",
+          "createdAt": "2026-09-03T15:43:53.536Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/ember-cli-30/issues/102",
+          "createdAt": "2026-09-08T03:10:36.286Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/ember-cli-30/issues/103",
+          "createdAt": "2026-09-03T01:38:57.967Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 68,
+        "sampledPRs": 100,
+        "externalPRs": 58,
+        "externalMergeRate": 0.37,
+        "newcomerPRs": 23,
+        "newcomerMergeRate": 0.17,
+        "medianFirstResponseHours": 54,
+        "medianMergeDays": 3,
+        "ghostedPct": 0.19,
+        "staleOpenPct": 0.47,
+        "confidence": "high"
+      },
+      "welcomeScore": 73,
+      "verdict": "welcoming",
+      "strengths": [
+        "11 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 37% of settled outside PRs get merged."
+      ]
+    },
+    {
+      "fullName": "sample-org/delta-sdk-31",
+      "url": "https://github.com/sample-org/delta-sdk-31",
+      "description": "Fictional Ruby project used to demo the layout (sample data).",
+      "primaryLanguage": "Ruby",
+      "languages": [
+        "Ruby"
+      ],
+      "topics": [
+        "web",
+        "security"
+      ],
+      "stars": 7335,
+      "pushedAt": "2026-09-18T16:39:21.185Z",
+      "contributingUrl": "https://github.com/sample-org/delta-sdk-31/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 1,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/delta-sdk-31/issues/100",
+          "createdAt": "2026-09-20T07:47:49.221Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 60,
+        "sampledPRs": 100,
+        "externalPRs": 47,
+        "externalMergeRate": 0.36,
+        "newcomerPRs": 19,
+        "newcomerMergeRate": 0.24,
+        "medianFirstResponseHours": 114,
+        "medianMergeDays": 12,
+        "ghostedPct": 0.16,
+        "staleOpenPct": 0.46,
+        "confidence": "high"
+      },
+      "welcomeScore": 59,
+      "verdict": "selective",
+      "strengths": [
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 36% of settled outside PRs get merged."
+      ]
+    },
+    {
+      "fullName": "sample-org/cinder-cli-32",
+      "url": "https://github.com/sample-org/cinder-cli-32",
+      "description": "Fictional C# project used to demo the layout (sample data).",
+      "primaryLanguage": "C#",
+      "languages": [
+        "C#"
+      ],
+      "topics": [
+        "security",
+        "web"
+      ],
+      "stars": 27299,
+      "pushedAt": "2026-09-18T18:42:09.600Z",
+      "contributingUrl": null,
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 7,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/cinder-cli-32/issues/100",
+          "createdAt": "2026-08-28T08:22:26.125Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/cinder-cli-32/issues/101",
+          "createdAt": "2026-09-15T03:30:06.846Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/cinder-cli-32/issues/102",
+          "createdAt": "2026-09-01T00:51:20.209Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/cinder-cli-32/issues/103",
+          "createdAt": "2026-08-25T16:16:15.027Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 91,
+        "sampledPRs": 100,
+        "externalPRs": 27,
+        "externalMergeRate": 0.31,
+        "newcomerPRs": 11,
+        "newcomerMergeRate": 0.18,
+        "medianFirstResponseHours": 3,
+        "medianMergeDays": 18,
+        "ghostedPct": 0.23,
+        "staleOpenPct": 0.51,
+        "confidence": "medium"
+      },
+      "welcomeScore": 63,
+      "verdict": "selective",
+      "strengths": [
+        "Maintainers usually reply within 3h.",
+        "7 open \"good first issue\" tickets right now."
+      ],
+      "watchouts": [
+        "Only 31% of settled outside PRs get merged.",
+        "Merges are slow: about 18 days from open to merge.",
+        "51% of open outside PRs have waited over 30 days."
+      ]
+    },
+    {
+      "fullName": "sample-org/fjord-api-33",
+      "url": "https://github.com/sample-org/fjord-api-33",
+      "description": "Fictional TypeScript project used to demo the layout (sample data).",
+      "primaryLanguage": "TypeScript",
+      "languages": [
+        "TypeScript"
+      ],
+      "topics": [
+        "docs",
+        "web"
+      ],
+      "stars": 15094,
+      "pushedAt": "2026-09-15T16:45:38.799Z",
+      "contributingUrl": "https://github.com/sample-org/fjord-api-33/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 3,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/fjord-api-33/issues/100",
+          "createdAt": "2026-08-26T14:56:15.820Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/fjord-api-33/issues/101",
+          "createdAt": "2026-08-28T19:20:45.400Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/fjord-api-33/issues/102",
+          "createdAt": "2026-09-06T17:58:51.232Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 145,
+        "sampledPRs": 100,
+        "externalPRs": 16,
+        "externalMergeRate": 0.3,
+        "newcomerPRs": 6,
+        "newcomerMergeRate": 0.24,
+        "medianFirstResponseHours": 105,
+        "medianMergeDays": 5,
+        "ghostedPct": 0.17,
+        "staleOpenPct": 0.3,
+        "confidence": "medium"
+      },
+      "welcomeScore": 55,
+      "verdict": "selective",
+      "strengths": [
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 30% of settled outside PRs get merged."
+      ]
+    },
+    {
+      "fullName": "sample-org/fjord-cli-34",
+      "url": "https://github.com/sample-org/fjord-cli-34",
+      "description": "Fictional Python project used to demo the layout (sample data).",
+      "primaryLanguage": "Python",
+      "languages": [
+        "Python"
+      ],
+      "topics": [
+        "ml",
+        "docs"
+      ],
+      "stars": 959,
+      "pushedAt": "2026-09-19T10:38:30.842Z",
+      "contributingUrl": "https://github.com/sample-org/fjord-cli-34/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": "Sample text: AI-assisted PRs must be disclosed and understood by the author.",
+      "goodFirstIssueCount": 9,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/fjord-cli-34/issues/100",
+          "createdAt": "2026-09-08T17:21:37.451Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/fjord-cli-34/issues/101",
+          "createdAt": "2026-09-04T05:38:19.359Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/fjord-cli-34/issues/102",
+          "createdAt": "2026-08-25T20:00:39.719Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/fjord-cli-34/issues/103",
+          "createdAt": "2026-09-21T07:48:18.541Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 108,
+        "sampledPRs": 100,
+        "externalPRs": 41,
+        "externalMergeRate": 0.33,
+        "newcomerPRs": 16,
+        "newcomerMergeRate": 0.21,
+        "medianFirstResponseHours": 30,
+        "medianMergeDays": 8,
+        "ghostedPct": 0.21,
+        "staleOpenPct": 0.26,
+        "confidence": "high"
+      },
+      "welcomeScore": 72,
+      "verdict": "welcoming",
+      "strengths": [
+        "Maintainers usually reply within 30h.",
+        "9 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 33% of settled outside PRs get merged.",
+        "Mentions AI-assisted contributions. Read the policy before using an AI tool."
+      ]
+    },
+    {
+      "fullName": "sample-org/iris-api-35",
+      "url": "https://github.com/sample-org/iris-api-35",
+      "description": "Fictional Go project used to demo the layout (sample data).",
+      "primaryLanguage": "Go",
+      "languages": [
+        "Go"
+      ],
+      "topics": [
+        "devtools",
+        "database"
+      ],
+      "stars": 27324,
+      "pushedAt": "2026-09-15T15:43:27.167Z",
+      "contributingUrl": "https://github.com/sample-org/iris-api-35/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 1,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/iris-api-35/issues/100",
+          "createdAt": "2026-09-18T13:01:16.063Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 78,
+        "sampledPRs": 100,
+        "externalPRs": 37,
+        "externalMergeRate": 0.28,
+        "newcomerPRs": 15,
+        "newcomerMergeRate": 0.18,
+        "medianFirstResponseHours": 65,
+        "medianMergeDays": 18,
+        "ghostedPct": 0.51,
+        "staleOpenPct": 0.57,
+        "confidence": "high"
+      },
+      "welcomeScore": 55,
+      "verdict": "selective",
+      "strengths": [
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 28% of settled outside PRs get merged.",
+        "51% of outside PRs never get a maintainer reply.",
+        "Merges are slow: about 18 days from open to merge.",
+        "57% of open outside PRs have waited over 30 days."
+      ]
+    },
+    {
+      "fullName": "sample-org/beacon-kit-36",
+      "url": "https://github.com/sample-org/beacon-kit-36",
+      "description": "Fictional Rust project used to demo the layout (sample data).",
+      "primaryLanguage": "Rust",
+      "languages": [
+        "Rust",
+        "TypeScript"
+      ],
+      "topics": [
+        "security",
+        "ml"
+      ],
+      "stars": 26078,
+      "pushedAt": "2026-09-19T09:46:12.291Z",
+      "contributingUrl": "https://github.com/sample-org/beacon-kit-36/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 8,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/beacon-kit-36/issues/100",
+          "createdAt": "2026-09-19T03:09:23.485Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/beacon-kit-36/issues/101",
+          "createdAt": "2026-09-06T11:51:32.227Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/beacon-kit-36/issues/102",
+          "createdAt": "2026-09-13T19:06:29.721Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/beacon-kit-36/issues/103",
+          "createdAt": "2026-09-07T05:16:12.619Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 117,
+        "sampledPRs": 100,
+        "externalPRs": 66,
+        "externalMergeRate": 0.26,
+        "newcomerPRs": 26,
+        "newcomerMergeRate": 0.14,
+        "medianFirstResponseHours": 54,
+        "medianMergeDays": 12,
+        "ghostedPct": 0.33,
+        "staleOpenPct": 0.35,
+        "confidence": "high"
+      },
+      "welcomeScore": 65,
+      "verdict": "selective",
+      "strengths": [
+        "8 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 26% of settled outside PRs get merged.",
+        "33% of outside PRs never get a maintainer reply."
+      ]
+    },
+    {
+      "fullName": "sample-org/grove-ui-37",
+      "url": "https://github.com/sample-org/grove-ui-37",
+      "description": "Fictional JavaScript project used to demo the layout (sample data).",
+      "primaryLanguage": "JavaScript",
+      "languages": [
+        "JavaScript"
+      ],
+      "topics": [
+        "testing",
+        "react"
+      ],
+      "stars": 18412,
+      "pushedAt": "2026-09-23T01:19:43.569Z",
+      "contributingUrl": "https://github.com/sample-org/grove-ui-37/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 8,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/grove-ui-37/issues/100",
+          "createdAt": "2026-09-10T14:31:46.285Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/grove-ui-37/issues/101",
+          "createdAt": "2026-09-21T23:05:10.173Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/grove-ui-37/issues/102",
+          "createdAt": "2026-09-10T23:31:51.751Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/grove-ui-37/issues/103",
+          "createdAt": "2026-08-28T17:26:36.255Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 166,
+        "sampledPRs": 100,
+        "externalPRs": 46,
+        "externalMergeRate": 0.29,
+        "newcomerPRs": 18,
+        "newcomerMergeRate": 0.17,
+        "medianFirstResponseHours": 65,
+        "medianMergeDays": 17,
+        "ghostedPct": 0.13,
+        "staleOpenPct": 0.2,
+        "confidence": "high"
+      },
+      "welcomeScore": 68,
+      "verdict": "selective",
+      "strengths": [
+        "8 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 29% of settled outside PRs get merged.",
+        "Merges are slow: about 17 days from open to merge."
+      ]
+    },
+    {
+      "fullName": "sample-org/iris-api-38",
+      "url": "https://github.com/sample-org/iris-api-38",
+      "description": "Fictional Java project used to demo the layout (sample data).",
+      "primaryLanguage": "Java",
+      "languages": [
+        "Java"
+      ],
+      "topics": [
+        "docs",
+        "devtools"
+      ],
+      "stars": 7766,
+      "pushedAt": "2026-09-23T14:49:50.431Z",
+      "contributingUrl": null,
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 3,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/iris-api-38/issues/100",
+          "createdAt": "2026-09-12T19:23:33.484Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/iris-api-38/issues/101",
+          "createdAt": "2026-09-12T03:35:36.581Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add unit test for parser",
+          "url": "https://github.com/sample-org/iris-api-38/issues/102",
+          "createdAt": "2026-08-25T20:36:39.258Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 161,
+        "sampledPRs": 100,
+        "externalPRs": 66,
+        "externalMergeRate": 0.29,
+        "newcomerPRs": 26,
+        "newcomerMergeRate": 0.28,
+        "medianFirstResponseHours": 96,
+        "medianMergeDays": 9,
+        "ghostedPct": 0.56,
+        "staleOpenPct": 0.15,
+        "confidence": "high"
+      },
+      "welcomeScore": 49,
+      "verdict": "selective",
+      "strengths": [],
+      "watchouts": [
+        "Only 29% of settled outside PRs get merged.",
+        "56% of outside PRs never get a maintainer reply."
+      ]
+    },
+    {
+      "fullName": "sample-org/ember-ui-39",
+      "url": "https://github.com/sample-org/ember-ui-39",
+      "description": "Fictional Ruby project used to demo the layout (sample data).",
+      "primaryLanguage": "Ruby",
+      "languages": [
+        "Ruby"
+      ],
+      "topics": [
+        "react",
+        "react"
+      ],
+      "stars": 16166,
+      "pushedAt": "2026-09-20T14:50:14.318Z",
+      "contributingUrl": "https://github.com/sample-org/ember-ui-39/blob/HEAD/CONTRIBUTING.md",
+      "aiPolicySnippet": "Sample text: AI-assisted PRs must be disclosed and understood by the author.",
+      "goodFirstIssueCount": 12,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/ember-ui-39/issues/100",
+          "createdAt": "2026-09-04T08:10:39.027Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/ember-ui-39/issues/101",
+          "createdAt": "2026-08-26T19:28:52.527Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Document config option",
+          "url": "https://github.com/sample-org/ember-ui-39/issues/102",
+          "createdAt": "2026-09-11T17:42:44.559Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Improve --help output",
+          "url": "https://github.com/sample-org/ember-ui-39/issues/103",
+          "createdAt": "2026-08-27T13:49:06.197Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 128,
+        "sampledPRs": 100,
+        "externalPRs": 61,
+        "externalMergeRate": 0.27,
+        "newcomerPRs": 24,
+        "newcomerMergeRate": 0.18,
+        "medianFirstResponseHours": 78,
+        "medianMergeDays": 3,
+        "ghostedPct": 0.51,
+        "staleOpenPct": 0.22,
+        "confidence": "high"
+      },
+      "welcomeScore": 62,
+      "verdict": "selective",
+      "strengths": [
+        "12 open \"good first issue\" tickets right now.",
+        "Has a written contributing guide."
+      ],
+      "watchouts": [
+        "Only 27% of settled outside PRs get merged.",
+        "51% of outside PRs never get a maintainer reply.",
+        "Mentions AI-assisted contributions. Read the policy before using an AI tool."
+      ]
+    },
+    {
+      "fullName": "sample-org/grove-cli-40",
+      "url": "https://github.com/sample-org/grove-cli-40",
+      "description": "Fictional C# project used to demo the layout (sample data).",
+      "primaryLanguage": "C#",
+      "languages": [
+        "C#"
+      ],
+      "topics": [
+        "devtools",
+        "docs"
+      ],
+      "stars": 26996,
+      "pushedAt": "2026-09-20T12:43:24.968Z",
+      "contributingUrl": null,
+      "aiPolicySnippet": null,
+      "goodFirstIssueCount": 10,
+      "goodFirstIssues": [
+        {
+          "number": 100,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/grove-cli-40/issues/100",
+          "createdAt": "2026-08-29T14:53:11.455Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 101,
+          "title": "Fix typo in error message",
+          "url": "https://github.com/sample-org/grove-cli-40/issues/101",
+          "createdAt": "2026-09-07T03:03:18.428Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/grove-cli-40/issues/102",
+          "createdAt": "2026-09-02T00:16:25.412Z",
+          "labels": [
+            "good first issue"
+          ]
+        },
+        {
+          "number": 103,
+          "title": "Handle empty input",
+          "url": "https://github.com/sample-org/grove-cli-40/issues/103",
+          "createdAt": "2026-08-24T20:13:29.298Z",
+          "labels": [
+            "good first issue"
+          ]
+        }
+      ],
+      "metrics": {
+        "windowDays": 72,
+        "sampledPRs": 100,
+        "externalPRs": 70,
+        "externalMergeRate": 0.24,
+        "newcomerPRs": 28,
+        "newcomerMergeRate": 0.14,
+        "medianFirstResponseHours": 82,
+        "medianMergeDays": 17,
+        "ghostedPct": 0.62,
+        "staleOpenPct": 0.27,
+        "confidence": "high"
+      },
+      "welcomeScore": 54,
+      "verdict": "selective",
+      "strengths": [
+        "10 open \"good first issue\" tickets right now."
+      ],
+      "watchouts": [
+        "Only 24% of settled outside PRs get merged.",
+        "62% of outside PRs never get a maintainer reply.",
+        "Merges are slow: about 17 days from open to merge."
+      ]
+    }
+  ]
+}
