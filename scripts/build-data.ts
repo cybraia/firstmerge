@@ -1,9 +1,15 @@
 /**
  * Builds data/repos.json from live GitHub data.
  *
- *   1. Search for active repos that have open "good first issue" tickets.
- *   2. Pull each repo's last 100 PRs and measure how outside contributors are treated.
- *   3. Keep only repos with enough outside-PR signal, rank by welcome score, write JSON.
+ *   1. For each language, search several star bands, not just "most starred", so mid-size,
+ *      measurable projects are not crowded out by mega-repos that get skipped anyway (see
+ *      below).
+ *   2. Pull each repo's recent PRs and measure how outside contributors are treated.
+ *   3. Keep only repos with enough outside-PR signal.
+ *   4. Reserve PER_LANGUAGE_FLOOR slots per language (best-scoring first), then fill the rest
+ *      of the dataset with the best-scoring repos overall. Without this, languages whose repos
+ *      score slightly lower on average, or that just have fewer candidates, get squeezed out
+ *      entirely by a single global top-N cut.
  *
  * Needs GITHUB_TOKEN (public data only). ~10 GraphQL points per repo; the script
  * pauses when the hourly budget runs low.
@@ -12,6 +18,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { buildAnalysis, computeMetrics, verdictFor, welcomeScore, type RawPR } from "../src/lib/metrics";
 import { findAiPolicy } from "../src/lib/policy";
+import { selectWithLanguageFloor } from "../src/lib/select";
 import type { Dataset, RepoRecord } from "../src/lib/types";
 
 const TOKEN = process.env.GITHUB_TOKEN;
@@ -20,9 +27,31 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-const LANGUAGES = ["TypeScript", "JavaScript", "Python", "Go", "Rust", "Java", "C#", "Ruby", "PHP", "Kotlin", "Swift", "C++"];
-const PER_LANGUAGE = Number(process.env.PER_LANGUAGE ?? 25);
-const KEEP = 100;
+// How many candidates to search for per language. Sorting by stars means the search always
+// finds the same handful of giant repos first, so a flat first: N under-covers a language
+// unless it is combined with the star-band split below.
+// Python, TypeScript, JavaScript and Ruby are weighted higher: this app's own audience (students
+// and early-career developers) skews toward them, and they came out thin in earlier runs.
+const LANGUAGE_QUOTA: Record<string, number> = {
+  Python: 80, TypeScript: 80, JavaScript: 60, Ruby: 60, Rust: 50,
+  Go: 40, Java: 40, "C#": 40, PHP: 40, Kotlin: 40, Swift: 40, "C++": 40,
+};
+const LANGUAGES = Object.keys(LANGUAGE_QUOTA);
+// Split each language's search across these so mid-size, measurable projects are not crowded
+// out by the handful of mega-repos that always sort first and usually get skipped anyway (too
+// busy to fit in MAX_PR_PAGES, or too little outside-PR signal relative to their size).
+const STAR_BANDS: { min: number; max: number | null }[] = [
+  { min: 200, max: 999 },
+  { min: 1000, max: 4999 },
+  { min: 5000, max: 19999 },
+  { min: 20000, max: null },
+];
+/** However a repo scores, guarantee at least this many repos per language survive into the
+ * dataset (best-scoring first), so a member whose stack is a thinner language still sees a
+ * real list instead of 2 repos. */
+const PER_LANGUAGE_FLOOR = 15;
+/** Extra best-scoring repos to add on top of every language's floor, regardless of language. */
+const EXTRA_SLOTS = 40;
 const MIN_EXTERNAL_PRS = 10;
 /** Extra pages of 100 PRs to fetch for repos where one page covers under 120 days. */
 const MAX_PR_PAGES = 3;
@@ -62,8 +91,8 @@ async function gql<T>(query: string, variables: Record<string, unknown> = {}, at
 }
 
 const SEARCH = `
-query($q: String!) {
-  search(query: $q, type: REPOSITORY, first: ${PER_LANGUAGE}) { nodes { ... on Repository { nameWithOwner } } }
+query($q: String!, $first: Int!) {
+  search(query: $q, type: REPOSITORY, first: $first) { nodes { ... on Repository { nameWithOwner } } }
   rateLimit { remaining resetAt cost }
 }`;
 
@@ -205,10 +234,16 @@ async function main() {
   const since = new Date(Date.now() - 30 * 86_400_000).toISOString().slice(0, 10);
   const candidates = new Set<string>();
   for (const lang of LANGUAGES) {
-    const q = `stars:>=200 good-first-issues:>=2 pushed:>=${since} archived:false fork:false is:public language:${lang} sort:stars-desc`;
-    const { search } = await gql<{ search: { nodes: { nameWithOwner: string }[] } }>(SEARCH, { q });
-    search.nodes.forEach((n) => candidates.add(n.nameWithOwner));
-    console.log(`${lang}: ${candidates.size} candidates so far`);
+    const perBand = Math.max(5, Math.ceil(LANGUAGE_QUOTA[lang] / STAR_BANDS.length));
+    const langSet = new Set<string>();
+    for (const band of STAR_BANDS) {
+      const starQualifier = band.max === null ? `stars:>=${band.min}` : `stars:${band.min}..${band.max}`;
+      const q = `${starQualifier} good-first-issues:>=2 pushed:>=${since} archived:false fork:false is:public language:${lang} sort:stars-desc`;
+      const { search } = await gql<{ search: { nodes: { nameWithOwner: string }[] } }>(SEARCH, { q, first: perBand });
+      search.nodes.forEach((n) => { langSet.add(n.nameWithOwner); candidates.add(n.nameWithOwner); });
+      await sleep(150);
+    }
+    console.log(`${lang}: ${langSet.size} candidates (${STAR_BANDS.length} star bands) | ${candidates.size} unique overall so far`);
   }
 
   // Results are cached per repo, so an interrupted run resumes instead of starting over.
@@ -216,8 +251,7 @@ async function main() {
   const outFile = path.join(process.cwd(), "data", "repos.json");
   const repos: RepoRecord[] = [];
   const writeOutput = () => {
-    const sorted = [...repos].sort((a, b) => b.welcomeScore - a.welcomeScore);
-    const dataset: Dataset = { generatedAt: new Date().toISOString(), isSample: false, repos: sorted.slice(0, KEEP) };
+    const dataset: Dataset = { generatedAt: new Date().toISOString(), isSample: false, repos: selectWithLanguageFloor(repos, PER_LANGUAGE_FLOOR, EXTRA_SLOTS) };
     fs.mkdirSync(path.dirname(outFile), { recursive: true });
     fs.writeFileSync(outFile, JSON.stringify(dataset, null, 2));
     return dataset.repos.length;
