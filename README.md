@@ -33,8 +33,14 @@ encrypted session cookie. The OAuth token itself is not stored.
 
 ```bash
 # .env.local: GITHUB_TOKEN=...   (fine-grained token, no extra permissions)
-npm run data             # writes data/repos.json (used automatically over the sample file)
+npm run data             # writes data/repos.json, then commit the result
 ```
+
+`data/repos.json` is committed to the repo on purpose: `src/lib/data.ts` imports it at build
+time, so every host that builds this app from git ships it automatically. Don't add it back to
+`.gitignore`. `scripts/ensure-data.mjs` (run via `predev`/`prebuild`) seeds it from the sample
+file if it's ever missing, so a fresh clone still builds before anyone has run the live
+pipeline.
 
 The pipeline (`scripts/build-data.ts`) searches active repos with open `good first issue`
 tickets across 12 languages, pulls each repo's recent PRs (up to 300, or 180 days), and keeps
@@ -83,10 +89,30 @@ Known limits, all surfaced honestly in the UI:
 
 ## Deploying
 
-`data/repos.json` is git-ignored. Either commit it after `npm run data`, or refresh it on a
-schedule (GitHub Action) and redeploy. Set `AUTH_SECRET`, `AUTH_GITHUB_ID`,
-`AUTH_GITHUB_SECRET` and `AUTH_URL` on the host, and add the production callback URL to the
-OAuth app.
+**Vercel** (recommended — zero-config for Next.js):
+
+1. Push this repo to GitHub and import it at vercel.com/new.
+2. Create a **second** GitHub OAuth app for production (github.com/settings/developers):
+   homepage = your Vercel URL, callback = `https://<your-app>.vercel.app/api/auth/callback/github`.
+   Don't reuse the localhost one — the callback URL must match exactly.
+3. In the Vercel project's Environment Variables, set:
+   - `AUTH_SECRET` — a new one, not the value from `.env.local`
+     (`node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"`)
+   - `AUTH_GITHUB_ID`, `AUTH_GITHUB_SECRET` — from the production OAuth app
+   - Leave `AUTH_DEV_LOGIN` and `GITHUB_TOKEN` unset. The dev login is compiled out whenever
+     `NODE_ENV=production` (which Vercel sets), regardless of that flag. `GITHUB_TOKEN` is only
+     used by `npm run data`, never by the running app, so it isn't a deploy secret.
+4. Deploy. Vercel runs `npm run build` (so `prebuild` → `next build`) automatically.
+
+**Any other Node host** (Render, Fly.io, Railway, a VPS): build with `npm run build`, run with
+`npm start`, and set the same three env vars. The app needs a Node runtime, not a static host,
+because sign-in and the paywall are server-rendered per request.
+
+**Refreshing production data:** `npm run data` costs real GitHub API points and takes a few
+minutes, so don't run it in Vercel's build step. Run it locally (or in a scheduled GitHub
+Action) with a `GITHUB_TOKEN` secret, commit the updated `data/repos.json`, and push — the
+existing deploy stays up until the new one finishes building. A weekly cadence is plenty; the
+underlying PR data doesn't move faster than that.
 
 ## Layout
 
