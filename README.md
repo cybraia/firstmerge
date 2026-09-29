@@ -1,135 +1,39 @@
 # firstmerge
 
-Finds open-source repos that actually merge pull requests from outside contributors, and ranks
-them for the signed-in user's own stack.
+A "good first issue" label doesn't tell you whether anyone will actually reply. firstmerge
+looks at real pull-request history for active open-source repos and scores them on how they
+actually treat outside contributors: how often their PRs get merged, how fast maintainers
+reply, and how many just get ignored.
 
-- **Signed out:** the top 2 repos with their headline numbers.
-- **Signed in with GitHub:** the top 30, re-ranked by fit with the user's languages and topics,
-  plus open first issues, a realistic timeline, contributing and AI-policy notes.
+- **Signed out:** a free preview of the top 2 repos.
+- **Signed in with GitHub:** the full ranked list, re-ranked for the languages and topics in
+  your own public repos, plus open first issues, a realistic timeline, and each repo's
+  contributing guide and AI-contribution policy.
 
 ## Run it locally
 
 ```bash
 npm install
-npm run data:sample      # 40 FICTIONAL repos, so the app runs with no GitHub token
+npm run data:sample      # generates 40 FICTIONAL sample repos, so it runs with no GitHub token
 npm run dev              # http://localhost:3000
 ```
 
-`.env.local` (copy from `.env.example`). With `AUTH_DEV_LOGIN=1` a "Dev login" button appears
-locally so you can test the signed-in view without an OAuth app. It is ignored in production.
+Copy `.env.example` to `.env.local` first. With `AUTH_DEV_LOGIN=1` set there, a "Dev login"
+button appears locally so you can see the signed-in view without setting up GitHub OAuth.
 
-## Real GitHub sign-in
+### Optional: sign in with real GitHub
 
-1. https://github.com/settings/developers -> **New OAuth App**
-2. Homepage `http://localhost:3000`, callback `http://localhost:3000/api/auth/callback/github`
-3. Put the client ID and secret in `.env.local` as `AUTH_GITHUB_ID` / `AUTH_GITHUB_SECRET`.
-4. Set `AUTH_SECRET` (`node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"`).
+1. Create an OAuth app at github.com/settings/developers — homepage `http://localhost:3000`,
+   callback `http://localhost:3000/api/auth/callback/github`.
+2. Put its client ID and secret in `.env.local` as `AUTH_GITHUB_ID` / `AUTH_GITHUB_SECRET`.
+3. Set `AUTH_SECRET` to a random value
+   (`node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"`).
 
-Only the `read:user` scope is requested. At sign-in we read the user's **public** repos once,
-derive a small skill profile (languages, topics, merged-PR count) and keep only that in the
-encrypted session cookie. The OAuth token itself is not stored.
-
-## Live data
+### Optional: pull real repo data instead of the sample set
 
 ```bash
-# .env.local: GITHUB_TOKEN=...   (fine-grained token, no extra permissions)
-npm run data             # writes data/repos.json, then commit the result
+# .env.local: GITHUB_TOKEN=...   (a fine-grained token, no extra permissions needed)
+npm run data
 ```
 
-`data/repos.json` is committed to the repo on purpose: `src/lib/data.ts` imports it at build
-time, so every host that builds this app from git ships it automatically. Don't add it back to
-`.gitignore`. `scripts/ensure-data.mjs` (run via `predev`/`prebuild`) seeds it from the sample
-file if it's ever missing, so a fresh clone still builds before anyone has run the live
-pipeline.
-
-The pipeline (`scripts/build-data.ts`) searches active repos with open `good first issue`
-tickets across 12 languages, pulls each repo's recent PRs (up to 300, or 180 days), and keeps
-repos with enough outside-PR signal. It prints the GraphQL points it used, and sleeps when the
-hourly budget runs low. Results are cached per repo in `data/.pipeline-cache.json` and
-`data/repos.json` is rewritten every 25 repos, so an interrupted run resumes where it stopped
-(`FRESH=1 npm run data` ignores the cache). Bump `SCORING_VERSION` in the script whenever the
-scoring logic changes.
-
-## How the paywall works
-
-Gating is enforced on the server in `src/lib/access.ts`. Fields that are locked (issues,
-policy text, contributing link, other repos' names) are stripped before rendering, so they are
-never in the HTML a signed-out visitor receives. `npm test` asserts this. Do not replace it
-with CSS blur or client-side hiding.
-
-## Scoring (`src/lib/metrics.ts`)
-
-Outside contributors = PR authors whose association is NONE, FIRST_TIME_CONTRIBUTOR,
-FIRST_TIMER or CONTRIBUTOR, **minus** anyone with 3+ PRs in the sample (that is the team:
-GitHub labels staff with private org membership as CONTRIBUTOR). Bots, bot-like accounts
-(`*bot`, `*machine`, `danger*`, ...) and drafts are excluded, and a reply within 60 seconds of
-opening is treated as automation.
-
-| Component | Weight |
-|---|---|
-| Merge rate of outside PRs (shrunk toward 50% for small samples) | 35 |
-| Median time to first maintainer reply (full marks at 24h, zero at 14 days) | 25 |
-| Share of outside PRs that got any reply | 15 |
-| Open, unassigned good-first-issues (cap 10) | 10 |
-| Volume of outside PRs in the window (cap 30) | 10 |
-| Has a contributing guide | 5 |
-
-Merge rate = merged / (settled + PRs still open, unanswered, for 14+ days). Letting outside PRs
-rot open therefore counts as a miss instead of being invisible.
-
-Known limits, all surfaced honestly in the UI:
-
-- At most 300 recent PRs and 180 days. Repos so busy that 300 PRs span under 14 days are
-  skipped as unmeasurable. Repos with fewer than 8 distinct outside contributors are dropped.
-- GitHub's FIRST_TIME_CONTRIBUTOR label changes once a PR is merged, so "first-timer" rates are
-  **estimated** from authors who appear once in the sample.
-- Rates need at least 5 settled PRs, otherwise they show `n/a`. Repos with a low-confidence
-  sample are dropped entirely.
-- A silent close counts as ghosted. Some maintainers close duplicates without comment.
-
-## Deploying
-
-**Vercel** (recommended — zero-config for Next.js):
-
-1. Push this repo to GitHub and import it at vercel.com/new.
-2. Create a **second** GitHub OAuth app for production (github.com/settings/developers):
-   homepage = your Vercel URL, callback = `https://<your-app>.vercel.app/api/auth/callback/github`.
-   Don't reuse the localhost one — the callback URL must match exactly.
-3. In the Vercel project's Environment Variables, set:
-   - `AUTH_SECRET` — a new one, not the value from `.env.local`
-     (`node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"`)
-   - `AUTH_GITHUB_ID`, `AUTH_GITHUB_SECRET` — from the production OAuth app
-   - Leave `AUTH_DEV_LOGIN` and `GITHUB_TOKEN` unset. The dev login is compiled out whenever
-     `NODE_ENV=production` (which Vercel sets), regardless of that flag. `GITHUB_TOKEN` is only
-     used by `npm run data`, never by the running app, so it isn't a deploy secret.
-4. Deploy. Vercel runs `npm run build` (so `prebuild` → `next build`) automatically.
-
-**Any other Node host** (Render, Fly.io, Railway, a VPS): build with `npm run build`, run with
-`npm start`, and set the same three env vars. The app needs a Node runtime, not a static host,
-because sign-in and the paywall are server-rendered per request.
-
-**Refreshing production data:** `npm run data` costs real GitHub API points and takes a few
-minutes, so don't run it in Vercel's build step. Run it locally (or in a scheduled GitHub
-Action) with a `GITHUB_TOKEN` secret, commit the updated `data/repos.json`, and push — the
-existing deploy stays up until the new one finishes building. A weekly cadence is plenty; the
-underlying PR data doesn't move faster than that.
-
-## Layout
-
-```
-src/lib/metrics.ts   PR metrics, welcome score, generated strengths/watch-outs
-src/lib/match.ts     per-user fit score and reasons
-src/lib/access.ts    free vs member views (the paywall)
-src/lib/skills.ts    reads the user's public GitHub profile at sign-in
-src/auth.ts          Auth.js config (GitHub + dev-only login)
-scripts/             build-data.ts (live), make-sample.ts (fictional)
-```
-
-## Troubleshooting
-
-**"Server error - There is a problem with the server configuration" on GitHub sign-in.**
-Auth.js shows this for any OAuth misconfiguration. The dev server prints the specific cause
-(`[auth] ...`). The usual one: `AUTH_GITHUB_SECRET` must be the 40-character *client secret*
-(OAuth app -> Client secrets -> Generate), not the client ID. Restart `npm run dev` after
-editing `.env.local`, because env files are read at startup. Also check the OAuth app's
-callback URL is exactly `http://localhost:3000/api/auth/callback/github`.
+This takes a few minutes and hits the GitHub API, so it's a separate step from `npm install`.
