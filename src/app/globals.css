@@ -1,7 +1,10 @@
 /*
  * Visual language borrowed from poetic.com: a warm off-white page, tight-tracked bold
  * display type, black pill buttons, sharp-ish black "stat block" cards with a small
- * indigo accent square, and bullet-prefixed uppercase eyebrow labels.
+ * indigo accent square, bullet-prefixed uppercase eyebrow labels, and — as much as any
+ * of that — generous whitespace and almost no borders. A first pass at this redesign
+ * copied the palette and type but kept the old, tight spacing, which read as cluttered;
+ * most of the values below exist to fix that, not the colours.
  *
  * Always light, on purpose: poetic.com itself has no dark mode, and this site doesn't
  * follow the visitor's system preference for one either.
@@ -11,8 +14,8 @@
  * repo is worth your time, so that can't be sacrificed for the sake of monochrome purity.
  */
 :root {
-  --bg: #fdfdfa;
-  --surface: #ffffff;
+  --bg: #f6f4ec;
+  --surface: #fffefb;
   --text: #1a1815;
   --muted: #6b6559;
   --line: #e8e3d8;
@@ -25,7 +28,7 @@
      cards play against their white page. */
   --ink: #0b0b0a;
   --cream: #f7f6f0;
-  --ink-ghost: rgba(0, 0, 0, 0.07);
+  --ink-ghost: rgba(0, 0, 0, 0.06);
 
   --radius: 14px;
   --radius-sharp: 6px;
@@ -38,22 +41,22 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 400 16px/1.55 var(--font-sans);
+  font: 400 16px/1.6 var(--font-sans);
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 h1, h2, h3 { line-height: 1.05; margin: 0; font-weight: 700; letter-spacing: -0.04em; }
 
-.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 .site-header { border-bottom: 1px solid var(--line); }
-.site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 12px; }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 12px; }
 .brand { font-weight: 800; font-size: 1.15rem; letter-spacing: -0.03em; text-transform: uppercase; color: var(--text); }
 .brand span { color: var(--accent); }
 .who { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--muted); }
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  padding: 11px 20px; border-radius: 999px; border: 0;
+  padding: 12px 22px; border-radius: 999px; border: 0;
   font: 600 0.95rem/1 var(--font-sans); letter-spacing: -0.01em; cursor: pointer; text-decoration: none;
   background: var(--ink); color: var(--cream);
 }
@@ -61,50 +64,50 @@ h1, h2, h3 { line-height: 1.05; margin: 0; font-weight: 700; letter-spacing: -0.
 .btn.ghost { background: var(--ink-ghost); color: var(--text); }
 .btn.small { padding: 7px 15px; font-size: 0.85rem; }
 
-main { padding: 32px 0 0; }
-.hero { padding: 20px 0 8px; max-width: 740px; }
+main { padding: 64px 0 0; }
+.hero { max-width: 720px; }
 .hero h1 { font-size: clamp(2.1rem, 5.6vw, 3.6rem); letter-spacing: -0.045em; }
-.hero p { color: var(--muted); font-size: 1.1rem; margin: 16px 0 24px; max-width: 60ch; }
+.hero p { color: var(--muted); font-size: 1.15rem; margin: 24px 0 36px; max-width: 58ch; }
 .notice {
   border: 1px dashed var(--line); color: var(--muted);
-  border-radius: var(--radius); padding: 10px 14px; font-size: 0.9rem; margin: 20px 0;
+  border-radius: var(--radius); padding: 12px 16px; font-size: 0.9rem; margin: 28px 0;
 }
 
 .eyebrow {
-  display: flex; align-items: center; gap: 7px; font-size: 0.72rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin: 0 0 4px;
+  display: flex; align-items: center; gap: 8px; font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin: 0 0 14px;
 }
 .eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; }
 
-.section-title { display: flex; align-items: baseline; justify-content: space-between; margin: 40px 0 14px; gap: 12px; flex-wrap: wrap; }
-.section-title h2 { font-size: 1.3rem; }
+.section-title { display: flex; align-items: baseline; justify-content: space-between; margin: 88px 0 28px; gap: 12px; flex-wrap: wrap; }
+.section-title h2 { font-size: 1.35rem; }
 .section-title small { color: var(--muted); font-size: 0.85rem; }
 
-.grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
+.grid { display: grid; gap: 28px; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
 
 .card {
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 20px; display: flex; flex-direction: column; gap: 12px;
+  background: var(--surface); border-radius: var(--radius);
+  padding: 30px; display: flex; flex-direction: column; gap: 20px;
 }
-.card-top { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; }
-.card h3 { font-size: 1.08rem; font-weight: 600; letter-spacing: -0.02em; word-break: break-word; }
+.card-top { display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; }
+.card h3 { font-size: 1.1rem; font-weight: 600; letter-spacing: -0.02em; word-break: break-word; }
 .card h3 a { color: var(--text); }
-.desc { color: var(--muted); font-size: 0.92rem; margin: 0; }
-.tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag { font-size: 0.78rem; font-weight: 500; padding: 4px 11px; border-radius: 999px; background: var(--ink-ghost); color: var(--text); }
+.desc { color: var(--muted); font-size: 0.94rem; margin: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { font-size: 0.78rem; font-weight: 500; padding: 5px 12px; border-radius: 999px; background: var(--ink-ghost); color: var(--text); }
 
 .score {
-  position: relative; text-align: center; min-width: 78px; flex: none;
-  background: var(--ink); color: var(--cream); border-radius: var(--radius); padding: 12px 12px 13px;
+  position: relative; text-align: center; min-width: 84px; flex: none;
+  background: var(--ink); color: var(--cream); border-radius: var(--radius); padding: 14px 14px 15px;
 }
 /* Small accent square in the corner, echoing poetic.com's signature detail on its black cards. */
 .score::after, .paywall-box::after {
-  content: ""; position: absolute; right: 10px; bottom: 10px; width: 7px; height: 7px; background: var(--accent);
+  content: ""; position: absolute; right: 11px; bottom: 11px; width: 7px; height: 7px; background: var(--accent);
 }
-.score b { display: block; font-size: 1.7rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
+.score b { display: block; font-size: 1.8rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
 .score small { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.65; }
-.score .verdict { justify-content: center; margin-top: 7px; }
+.score .verdict { justify-content: center; margin-top: 9px; }
 
 .verdict {
   display: inline-flex; align-items: center; gap: 5px; font-size: 0.7rem; font-weight: 700;
@@ -115,63 +118,64 @@ main { padding: 32px 0 0; }
 .verdict.selective { color: var(--mid); }
 .verdict.hard { color: var(--bad); }
 
-.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.metric { border-top: 2px solid var(--line); padding-top: 8px; }
-.metric b { display: block; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.metric { border-top: 2px solid var(--line); padding-top: 10px; }
+.metric b { display: block; font-size: 1.2rem; font-weight: 700; letter-spacing: -0.02em; }
 .metric span { font-size: 0.74rem; color: var(--muted); }
 
 ul.plain { margin: 0; padding-left: 18px; font-size: 0.92rem; }
-ul.plain li { margin: 3px 0; }
+ul.plain li { margin: 4px 0; }
 ul.plain.good li::marker { color: var(--good); }
 ul.plain.warn li::marker { color: var(--mid); }
-.reasons { border-left: 2px solid var(--accent); padding-left: 12px; font-size: 0.9rem; }
-.reasons p { margin: 2px 0; }
+.reasons { border-left: 2px solid var(--accent); padding-left: 14px; font-size: 0.9rem; }
+.reasons p { margin: 3px 0; }
 .fit { font-size: 0.78rem; color: var(--muted); }
 
-.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
-.chip { padding: 6px 15px; border-radius: 999px; font-size: 0.88rem; font-weight: 500; color: var(--text); background: var(--ink-ghost); }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 0; }
+.chip { padding: 7px 16px; border-radius: 999px; font-size: 0.88rem; font-weight: 500; color: var(--text); background: var(--ink-ghost); }
 .chip.on { background: var(--ink); color: var(--cream); }
 a.chip:hover { text-decoration: none; opacity: 0.85; }
 
-.locked-wrap { position: relative; margin-top: 14px; }
+.locked-wrap { position: relative; margin-top: 28px; }
 .locked-wrap .grid { filter: blur(6px); opacity: 0.5; pointer-events: none; user-select: none; }
 .skeleton .bar { height: 12px; border-radius: 6px; background: var(--line); }
 .skeleton .bar.w40 { width: 40%; } .skeleton .bar.w70 { width: 70%; } .skeleton .bar.w90 { width: 90%; }
 .skeleton .block { height: 46px; border-radius: 8px; background: var(--line); }
 .paywall {
-  position: absolute; inset: 0; display: flex; align-items: flex-start; justify-content: center; padding-top: 24px;
+  position: absolute; inset: 0; display: flex; align-items: flex-start; justify-content: center; padding-top: 40px;
 }
 .paywall-box {
-  position: relative; background: var(--ink); color: var(--cream); border-radius: var(--radius-sharp); padding: 28px;
+  position: relative; background: var(--ink); color: var(--cream); border-radius: var(--radius-sharp); padding: 36px;
   max-width: 460px; width: calc(100% - 32px); overflow: hidden;
 }
-.paywall-box h2 { font-size: 1.4rem; margin-bottom: 10px; letter-spacing: -0.03em; }
-.paywall-box ul { padding-left: 18px; opacity: 0.75; font-size: 0.95rem; margin: 10px 0 18px; }
-.paywall-box small { display: block; margin-top: 12px; opacity: 0.6; font-size: 0.8rem; }
+.paywall-box h2 { font-size: 1.4rem; margin-bottom: 14px; letter-spacing: -0.03em; }
+.paywall-box ul { padding-left: 18px; opacity: 0.75; font-size: 0.95rem; margin: 14px 0 22px; }
+.paywall-box ul li { margin: 6px 0; }
+.paywall-box small { display: block; margin-top: 14px; opacity: 0.6; font-size: 0.8rem; }
 .paywall-box .btn { background: var(--cream); color: var(--ink); }
 
-.method { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
-.method h2 { color: var(--text); font-size: 1.15rem; margin-bottom: 10px; }
+.method { margin-top: 100px; padding-top: 36px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.94rem; }
+.method h2 { color: var(--text); font-size: 1.2rem; margin-bottom: 14px; }
 
-.detail-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+.detail-head { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
 .detail-head h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); letter-spacing: -0.035em; word-break: break-word; }
-.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin-top: 16px; }
-.panel h2 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
-.two { display: grid; gap: 16px; grid-template-columns: 1fr; }
+.panel { background: var(--surface); border-radius: var(--radius); padding: 30px; margin-top: 24px; }
+.panel h2 { font-size: 1.12rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 16px; }
+.two { display: grid; gap: 24px; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .two { grid-template-columns: 1fr 1fr; } }
 .metrics.big { grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 720px) { .metrics.big { grid-template-columns: repeat(4, 1fr); } }
-.issue { display: block; padding: 11px 0; border-top: 1px solid var(--line); }
+.issue { display: block; padding: 13px 0; border-top: 1px solid var(--line); }
 .issue:first-of-type { border-top: 0; }
-.locked-note { color: var(--muted); font-size: 0.92rem; margin: 0 0 12px; }
-.back { font-size: 0.9rem; display: inline-block; margin-bottom: 14px; color: var(--muted); }
+.locked-note { color: var(--muted); font-size: 0.92rem; margin: 0 0 16px; }
+.back { font-size: 0.9rem; display: inline-block; margin-bottom: 24px; color: var(--muted); }
 
 /* Deliberately fixed dark, independent of light/dark page mode — a brand close, the
    same way poetic.com's own footer band stays black regardless of the rest of the page. */
-footer { background: #0b0b0a; color: #cfccc2; padding: 48px 0 28px; margin-top: 64px; }
+footer { background: #0b0b0a; color: #cfccc2; padding: 64px 0 32px; margin-top: 120px; }
 footer .fine-print { font-size: 0.82rem; opacity: 0.7; max-width: 60ch; }
 footer .wordmark {
-  margin-top: 28px; font-weight: 800; text-transform: uppercase; color: #211f1a;
+  margin-top: 32px; font-weight: 800; text-transform: uppercase; color: #211f1a;
   font-size: clamp(3rem, 15vw, 9rem); line-height: 0.85; letter-spacing: -0.045em;
   white-space: nowrap; overflow: hidden;
 }

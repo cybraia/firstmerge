@@ -69,14 +69,14 @@ export function RepoCard({ repo, match }: { repo: FreeRepoView; match?: Match })
       ) : null}
       {repo.strengths.length > 0 ? (
         <ul className="plain good">
-          {repo.strengths.slice(0, 2).map((s) => (
+          {repo.strengths.slice(0, 1).map((s) => (
             <li key={s}>{s}</li>
           ))}
         </ul>
       ) : null}
       {repo.watchouts.length > 0 ? (
         <ul className="plain warn">
-          {repo.watchouts.slice(0, 2).map((s) => (
+          {repo.watchouts.slice(0, 1).map((s) => (
             <li key={s}>{s}</li>
           ))}
         </ul>
