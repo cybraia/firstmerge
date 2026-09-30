@@ -115,7 +115,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
         ))}
       </nav>
 
-      <div className="grid" style={{ marginTop: 18 }}>
+      <div className="grid" style={{ marginTop: 40 }}>
         {repos.map(({ repo, match }) => (
           <RepoCard key={repo.fullName} repo={repo} match={match} />
         ))}
