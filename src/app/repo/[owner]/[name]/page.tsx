@@ -161,6 +161,7 @@ export default async function RepoPage({ params }: { params: Promise<{ owner: st
         </>
       ) : (
         <div className="panel">
+          <p className="eyebrow">Unlock</p>
           <h2>Unlock the rest</h2>
           <p className="locked-note">
             Sign in to see this repo&apos;s open first issues, its contributing and AI-policy notes, how well it fits your

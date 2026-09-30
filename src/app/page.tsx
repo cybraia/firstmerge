@@ -54,6 +54,9 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
           </div>
           <div className="paywall">
             <div className="paywall-box">
+              <p className="eyebrow" style={{ color: "inherit", opacity: 0.7 }}>
+                Unlock
+              </p>
               <h2>{home.lockedCount} more repos, ranked for your stack</h2>
               <ul>
                 <li>Repos re-ranked by the languages and topics in your own GitHub</li>
@@ -81,6 +84,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
   return (
     <>
       <section className="hero">
+        <p className="eyebrow">Personalised for you</p>
         <h1>Your top {MEMBER_REPO_COUNT} repos</h1>
         <p>
           {hasSkills
@@ -125,6 +129,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
 function Methodology() {
   return (
     <section className="method">
+      <p className="eyebrow">Methodology</p>
       <h2>How we score</h2>
       <p>
         For each repo we sample the last 100 pull requests (up to 180 days) and look only at outside contributors. The

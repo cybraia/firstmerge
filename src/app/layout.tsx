@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import Link from "next/link";
 import { auth } from "@/auth";
 import { SignOutButton } from "@/components/AuthButtons";
 import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 export const metadata: Metadata = {
   title: "firstmerge: open source repos that actually merge outside PRs",
@@ -13,7 +16,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await auth();
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body>
         <header className="site-header">
           <div className="wrap">
@@ -31,8 +34,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main className="wrap">{children}</main>
         <footer>
           <div className="wrap">
-            Numbers come from public GitHub pull-request history and are estimates, not guarantees. Not affiliated with
-            GitHub.
+            <p className="fine-print">
+              Numbers come from public GitHub pull-request history and are estimates, not guarantees. Not affiliated
+              with GitHub.
+            </p>
+            <div className="wordmark" aria-hidden="true">
+              firstmerge
+            </div>
           </div>
         </footer>
       </body>

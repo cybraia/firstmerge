@@ -1,34 +1,49 @@
+/*
+ * Visual language borrowed from poetic.com: a warm off-white page, tight-tracked bold
+ * display type, black pill buttons, sharp-ish black "stat block" cards with a small
+ * indigo accent square, and bullet-prefixed uppercase eyebrow labels.
+ *
+ * Departure from that source on purpose: verdict colour (good/mid/bad) stays a real
+ * semantic signal, not decoration — this app exists to tell you at a glance whether a
+ * repo is worth your time, so that can't be sacrificed for the sake of monochrome purity.
+ */
 :root {
-  --bg: #fafaf7;
+  --bg: #fdfdfa;
   --surface: #ffffff;
-  --text: #1b1f24;
-  --muted: #5b6470;
-  --line: #e4e4de;
-  --accent: #1f6f5c;
-  --accent-ink: #ffffff;
-  --good: #1f7a4d;
-  --good-bg: #e3f4ea;
+  --text: #1a1815;
+  --muted: #6b6559;
+  --line: #e8e3d8;
+  --accent: #2b27c4;
+  --good: #2f7a4f;
   --mid: #8a5a00;
-  --mid-bg: #fdf0d2;
   --bad: #a3322b;
-  --bad-bg: #fbe4e1;
-  --radius: 12px;
+
+  /* The "stat block" surface (score chip, CTA panel): flips with theme like everything
+     else, but is always the maximum-contrast pairing against the page, light-on-dark or
+     dark-on-light, the same role poetic.com's black cards play against their white page. */
+  --ink: #0b0b0a;
+  --cream: #f7f6f0;
+  --ink-ghost: rgba(0, 0, 0, 0.07);
+
+  --radius: 14px;
+  --radius-sharp: 6px;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #12140f;
-    --surface: #1a1d17;
-    --text: #ecece6;
-    --muted: #9aa39c;
-    --line: #2b2f27;
-    --accent: #4bb597;
-    --accent-ink: #0d1a15;
+    --bg: #111009;
+    --surface: #1a1811;
+    --text: #f1efe6;
+    --muted: #a29a89;
+    --line: #2e2b21;
+    --accent: #9c98ff;
     --good: #6fd39c;
-    --good-bg: #163325;
     --mid: #e6b64f;
-    --mid-bg: #3a2e12;
     --bad: #f08a80;
-    --bad-bg: #3a1a17;
+
+    --ink: #f7f6f0;
+    --cream: #0b0b0a;
+    --ink-ghost: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -38,83 +53,103 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 400 16px/1.55 var(--font-sans);
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
-h1, h2, h3 { line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+h1, h2, h3 { line-height: 1.05; margin: 0; font-weight: 700; letter-spacing: -0.04em; }
 
 .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
-.site-header { border-bottom: 1px solid var(--line); background: var(--surface); }
-.site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 12px; }
-.brand { font-weight: 700; font-size: 1.1rem; color: var(--text); }
+.site-header { border-bottom: 1px solid var(--line); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 12px; }
+.brand { font-weight: 800; font-size: 1.15rem; letter-spacing: -0.03em; text-transform: uppercase; color: var(--text); }
 .brand span { color: var(--accent); }
 .who { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--muted); }
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  padding: 10px 18px; border-radius: 999px; border: 1px solid transparent;
-  font: inherit; font-weight: 600; cursor: pointer; text-decoration: none;
-  background: var(--accent); color: var(--accent-ink);
+  padding: 11px 20px; border-radius: 999px; border: 0;
+  font: 600 0.95rem/1 var(--font-sans); letter-spacing: -0.01em; cursor: pointer; text-decoration: none;
+  background: var(--ink); color: var(--cream);
 }
-.btn:hover { text-decoration: none; filter: brightness(1.06); }
-.btn.ghost { background: transparent; color: var(--text); border-color: var(--line); }
-.btn.small { padding: 6px 14px; font-size: 0.875rem; }
+.btn:hover { text-decoration: none; opacity: 0.88; }
+.btn.ghost { background: var(--ink-ghost); color: var(--text); }
+.btn.small { padding: 7px 15px; font-size: 0.85rem; }
 
-main { padding: 32px 0 64px; }
-.hero { padding: 24px 0 8px; max-width: 720px; }
-.hero h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); }
-.hero p { color: var(--muted); font-size: 1.1rem; margin: 14px 0 22px; }
+main { padding: 32px 0 0; }
+.hero { padding: 20px 0 8px; max-width: 740px; }
+.hero h1 { font-size: clamp(2.1rem, 5.6vw, 3.6rem); letter-spacing: -0.045em; }
+.hero p { color: var(--muted); font-size: 1.1rem; margin: 16px 0 24px; max-width: 60ch; }
 .notice {
-  border: 1px dashed var(--line); background: var(--surface); color: var(--muted);
+  border: 1px dashed var(--line); color: var(--muted);
   border-radius: var(--radius); padding: 10px 14px; font-size: 0.9rem; margin: 20px 0;
 }
-.section-title { display: flex; align-items: baseline; justify-content: space-between; margin: 36px 0 14px; gap: 12px; flex-wrap: wrap; }
-.section-title h2 { font-size: 1.25rem; }
-.section-title small { color: var(--muted); }
+
+.eyebrow {
+  display: flex; align-items: center; gap: 7px; font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin: 0 0 4px;
+}
+.eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; }
+
+.section-title { display: flex; align-items: baseline; justify-content: space-between; margin: 40px 0 14px; gap: 12px; flex-wrap: wrap; }
+.section-title h2 { font-size: 1.3rem; }
+.section-title small { color: var(--muted); font-size: 0.85rem; }
 
 .grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
 
 .card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 18px; display: flex; flex-direction: column; gap: 12px;
+  padding: 20px; display: flex; flex-direction: column; gap: 12px;
 }
-.card-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
-.card h3 { font-size: 1.05rem; word-break: break-word; }
+.card-top { display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; }
+.card h3 { font-size: 1.08rem; font-weight: 600; letter-spacing: -0.02em; word-break: break-word; }
 .card h3 a { color: var(--text); }
 .desc { color: var(--muted); font-size: 0.92rem; margin: 0; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag { font-size: 0.78rem; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.tag { font-size: 0.78rem; font-weight: 500; padding: 4px 11px; border-radius: 999px; background: var(--ink-ghost); color: var(--text); }
 
-.score { text-align: center; min-width: 64px; }
-.score b { display: block; font-size: 1.5rem; line-height: 1; }
-.score small { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
-.verdict { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
-.verdict.welcoming { background: var(--good-bg); color: var(--good); }
-.verdict.selective { background: var(--mid-bg); color: var(--mid); }
-.verdict.hard { background: var(--bad-bg); color: var(--bad); }
+.score {
+  position: relative; text-align: center; min-width: 78px; flex: none;
+  background: var(--ink); color: var(--cream); border-radius: var(--radius); padding: 12px 12px 13px;
+}
+/* Small accent square in the corner, echoing poetic.com's signature detail on its black cards. */
+.score::after, .paywall-box::after {
+  content: ""; position: absolute; right: 10px; bottom: 10px; width: 7px; height: 7px; background: var(--accent);
+}
+.score b { display: block; font-size: 1.7rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
+.score small { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.65; }
+.score .verdict { justify-content: center; margin-top: 7px; }
 
-.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.metric { background: var(--bg); border-radius: 8px; padding: 8px 10px; }
-.metric b { display: block; font-size: 1.05rem; }
+.verdict {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 0.7rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+.verdict::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex: none; }
+.verdict.welcoming { color: var(--good); }
+.verdict.selective { color: var(--mid); }
+.verdict.hard { color: var(--bad); }
+
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.metric { border-top: 2px solid var(--line); padding-top: 8px; }
+.metric b { display: block; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; }
 .metric span { font-size: 0.74rem; color: var(--muted); }
 
 ul.plain { margin: 0; padding-left: 18px; font-size: 0.92rem; }
 ul.plain li { margin: 3px 0; }
 ul.plain.good li::marker { color: var(--good); }
 ul.plain.warn li::marker { color: var(--mid); }
-.reasons { border-left: 3px solid var(--accent); padding-left: 12px; font-size: 0.9rem; }
+.reasons { border-left: 2px solid var(--accent); padding-left: 12px; font-size: 0.9rem; }
 .reasons p { margin: 2px 0; }
 .fit { font-size: 0.78rem; color: var(--muted); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
-.chip { padding: 5px 13px; border-radius: 999px; border: 1px solid var(--line); font-size: 0.88rem; color: var(--text); background: var(--surface); }
-.chip.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-a.chip:hover { text-decoration: none; border-color: var(--accent); }
+.chip { padding: 6px 15px; border-radius: 999px; font-size: 0.88rem; font-weight: 500; color: var(--text); background: var(--ink-ghost); }
+.chip.on { background: var(--ink); color: var(--cream); }
+a.chip:hover { text-decoration: none; opacity: 0.85; }
 
 .locked-wrap { position: relative; margin-top: 14px; }
-.locked-wrap .grid { filter: blur(6px); opacity: 0.55; pointer-events: none; user-select: none; }
+.locked-wrap .grid { filter: blur(6px); opacity: 0.5; pointer-events: none; user-select: none; }
 .skeleton .bar { height: 12px; border-radius: 6px; background: var(--line); }
 .skeleton .bar.w40 { width: 40%; } .skeleton .bar.w70 { width: 70%; } .skeleton .bar.w90 { width: 90%; }
 .skeleton .block { height: 46px; border-radius: 8px; background: var(--line); }
@@ -122,26 +157,36 @@ a.chip:hover { text-decoration: none; border-color: var(--accent); }
   position: absolute; inset: 0; display: flex; align-items: flex-start; justify-content: center; padding-top: 24px;
 }
 .paywall-box {
-  background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px;
-  max-width: 460px; width: calc(100% - 32px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.14);
+  position: relative; background: var(--ink); color: var(--cream); border-radius: var(--radius-sharp); padding: 28px;
+  max-width: 460px; width: calc(100% - 32px); overflow: hidden;
 }
-.paywall-box h2 { font-size: 1.3rem; margin-bottom: 8px; }
-.paywall-box ul { padding-left: 18px; color: var(--muted); font-size: 0.95rem; margin: 10px 0 16px; }
-.paywall-box small { display: block; margin-top: 10px; color: var(--muted); font-size: 0.8rem; }
+.paywall-box h2 { font-size: 1.4rem; margin-bottom: 10px; letter-spacing: -0.03em; }
+.paywall-box ul { padding-left: 18px; opacity: 0.75; font-size: 0.95rem; margin: 10px 0 18px; }
+.paywall-box small { display: block; margin-top: 12px; opacity: 0.6; font-size: 0.8rem; }
+.paywall-box .btn { background: var(--cream); color: var(--ink); }
 
-.method { margin-top: 44px; color: var(--muted); font-size: 0.92rem; }
-.method h2 { color: var(--text); font-size: 1.1rem; margin-bottom: 8px; }
+.method { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+.method h2 { color: var(--text); font-size: 1.15rem; margin-bottom: 10px; }
 
 .detail-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
-.detail-head h1 { font-size: clamp(1.5rem, 4vw, 2rem); word-break: break-word; }
-.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin-top: 16px; }
-.panel h2 { font-size: 1.05rem; margin-bottom: 10px; }
+.detail-head h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); letter-spacing: -0.035em; word-break: break-word; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin-top: 16px; }
+.panel h2 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
 .two { display: grid; gap: 16px; grid-template-columns: 1fr; }
 @media (min-width: 720px) { .two { grid-template-columns: 1fr 1fr; } }
 .metrics.big { grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 720px) { .metrics.big { grid-template-columns: repeat(4, 1fr); } }
-.issue { display: block; padding: 10px 0; border-top: 1px solid var(--line); }
+.issue { display: block; padding: 11px 0; border-top: 1px solid var(--line); }
 .issue:first-of-type { border-top: 0; }
 .locked-note { color: var(--muted); font-size: 0.92rem; margin: 0 0 12px; }
-.back { font-size: 0.9rem; display: inline-block; margin-bottom: 14px; }
-footer { border-top: 1px solid var(--line); padding: 20px 0; color: var(--muted); font-size: 0.85rem; }
+.back { font-size: 0.9rem; display: inline-block; margin-bottom: 14px; color: var(--muted); }
+
+/* Deliberately fixed dark, independent of light/dark page mode — a brand close, the
+   same way poetic.com's own footer band stays black regardless of the rest of the page. */
+footer { background: #0b0b0a; color: #cfccc2; padding: 48px 0 28px; margin-top: 64px; }
+footer .fine-print { font-size: 0.82rem; opacity: 0.7; max-width: 60ch; }
+footer .wordmark {
+  margin-top: 28px; font-weight: 800; text-transform: uppercase; color: #211f1a;
+  font-size: clamp(3rem, 15vw, 9rem); line-height: 0.85; letter-spacing: -0.045em;
+  white-space: nowrap; overflow: hidden;
+}
