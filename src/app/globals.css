@@ -3,6 +3,9 @@
  * display type, black pill buttons, sharp-ish black "stat block" cards with a small
  * indigo accent square, and bullet-prefixed uppercase eyebrow labels.
  *
+ * Always light, on purpose: poetic.com itself has no dark mode, and this site doesn't
+ * follow the visitor's system preference for one either.
+ *
  * Departure from that source on purpose: verdict colour (good/mid/bad) stays a real
  * semantic signal, not decoration — this app exists to tell you at a glance whether a
  * repo is worth your time, so that can't be sacrificed for the sake of monochrome purity.
@@ -18,9 +21,8 @@
   --mid: #8a5a00;
   --bad: #a3322b;
 
-  /* The "stat block" surface (score chip, CTA panel): flips with theme like everything
-     else, but is always the maximum-contrast pairing against the page, light-on-dark or
-     dark-on-light, the same role poetic.com's black cards play against their white page. */
+  /* The "stat block" surface (score chip, CTA panel): the same role poetic.com's black
+     cards play against their white page. */
   --ink: #0b0b0a;
   --cream: #f7f6f0;
   --ink-ghost: rgba(0, 0, 0, 0.07);
@@ -29,26 +31,9 @@
   --radius-sharp: 6px;
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111009;
-    --surface: #1a1811;
-    --text: #f1efe6;
-    --muted: #a29a89;
-    --line: #2e2b21;
-    --accent: #9c98ff;
-    --good: #6fd39c;
-    --mid: #e6b64f;
-    --bad: #f08a80;
-
-    --ink: #f7f6f0;
-    --cream: #0b0b0a;
-    --ink-ghost: rgba(255, 255, 255, 0.1);
-  }
-}
 
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; color-scheme: light; }
 body {
   margin: 0;
   background: var(--bg);
