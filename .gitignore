@@ -9,3 +9,6 @@ next-env.d.ts
 # host that builds this app from git (Vercel, Netlify, ...) needs it to be there. Refresh it with
 # `npm run data`, then commit the result.
 data/.pipeline-cache.json
+
+.vercel
+.env*
